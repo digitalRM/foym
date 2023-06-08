@@ -13,8 +13,8 @@ export function ButtonWithIcon() {
             <HeartHandshake className="mr-2 h-4 w-4" /> Work Together
         </Button>
 
-        <Button variant="outline" className=" ml-2 border-zinc-700 hover:bg-zinc-700">
-            <Layout className="mr-2 h-4 w-4" /> Past Work
+        <Button variant="outline" className=" ml-2 border-slate-700 hover:bg-slate-700">
+            <Layout className="mr-2 h-4 w-4" /> Previous Work
         </Button>
     </>
   )

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 import { MainNavContact } from "./main-nav-contact"
 
 
-export function MainNav({
+export function MainNavWork({
   className,
   ...props
 }: React.HTMLAttributes<HTMLElement>) {
@@ -19,13 +19,13 @@ export function MainNav({
     >
       <Link
         href="/"
-        className="text-sm font-medium transition-colors hover:text-primary font-sans"
+        className="text-sm font-medium text-neutral-500 transition-colors hover:text-primary font-sans"
       >
         Home
       </Link>
       <Link
         href="/work"
-        className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans"
+        className="text-sm font-medium text-primary transition-colors hover:text-primary font-sans"
       >
         Our Work
       </Link>
