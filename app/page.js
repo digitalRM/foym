@@ -16,8 +16,8 @@ import {
 
 export default function Home() {
   return (
-    <div className="hidden flex-col md:flex bg-white dark:bg-black h-screen w-screen">
-      <div className="border-b border-zinc-800">
+    <div className="flex-col flex bg-white dark:bg-black h-screen w-screen overflow-x-hidden">
+      <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm">
         <div className="flex h-16 items-center px-4" >
 
         <div className="mr-auto ml-6 flex items-center space-x-4 ">
@@ -30,10 +30,10 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center align-center">
-        <h1 className="font-sans text-black dark:text-white lg:text-5xl md:text-3xl font-bold flex justify-center align-center tracking-tight mt-36">focus on your mission, not your website<span className="text-brandPink font-sans font-semibold lg:text-5xl md:text-3xl sm:text-xl">.</span></h1>
+        <h1 className="font-sans text-xl  text-black dark:text-white lg:text-5xl md:text-3xl sm:text-xl font-bold flex justify-center align-center tracking-tight mt-52">focus on your mission, not your website<span className="text-brandPink font-sans font-semibold lg:text-5xl md:text-3xl sm:text-xl">.</span></h1>
       </div>
 
-      <div className="flex justify-center align-center max-w-4xl text-center mx-auto">
+      <div className="flex max-w-md justify-center align-center lg:max-w-4xl md:max-w-2xl sm:max-w-lg   text-center mx-auto">
         <h3 className="font-sans text-zinc-600 dark:text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
       </div>
 
@@ -41,16 +41,29 @@ export default function Home() {
         <ButtonWithIcon />
       </div>
 
-      <div className="w-screen h-screen border border-zinc-800 flex justify-evenly p-3 lg:flex-nowrap md:flex-wrap bg-white dark:bg-black">
+      <div className="w-screen h-screen border border-zinc-800 border-x-0 border-b-0 flex justify-evenly p-6 px-0 lg:p-12 md:px-6 sm:px-0 lg:flex-nowrap md:flex-wrap bg-white dark:bg-black relative">
       
       
-      <div className="w-full  rounded-lg m-2 h-[400px]  border-zinc-800 mx-2 p-[2px]">
-          <div className="bg-gradient-to-r from-brandBlue to-brandPinkStep6 flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[9px] transition-all p-[2px]">
-            <Card className="w-full rounded-lg p-2 h-full border-[0] dark:bg-black ">
-              <CardHeader>
-                <CardTitle>Create project</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
-              </CardHeader>
+      <div className="w-full m-2 h-[600px] rounded-[50px] border-zinc-800 mx-2 p-[2px] relative">
+          <div className="bg-gradient-to-r from-brandBlue to-brandPink flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[50px] dark:rounded-[50px] transition-all p-[1px]">
+            <Card className="w-full rounded-[50px] p-12 h-full border-[0] dark:bg-black ">
+
+              <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit m-4">
+                <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
+                  <CardTitle className="">Creating a positive impact shouldn't be a challenge.</CardTitle>
+                  <CardDescription className=" mt-3 max-w-lg">That's why we firmly believe that your valuable time is best spent pursuing your mission, rather than being wasted on website development. Break boundaries, change lives, and do what you do best – don’t worry about the rest.</CardDescription>
+
+                </CardHeader>
+              </Card>
+
+              <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit z-10 relative m-4">
+                <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
+                  <CardTitle className="">Creating a positive impact shouldn't be a challenge.</CardTitle>
+                  <CardDescription className=" mt-3 max-w-lg">That's why we firmly believe that your valuable time is best spent pursuing your mission, rather than being wasted on website development. Break boundaries, change lives, and do what you do best – don’t worry about the rest.</CardDescription>
+
+                </CardHeader>
+              </Card>
+              
               <CardContent>
 
               </CardContent>
@@ -58,64 +71,18 @@ export default function Home() {
 
               </CardFooter>
             </Card>
+
+            <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-full h-1/2 absolute bottom-0 left-0">
+
+            </div>
           </div>
+
+          
         </div>       
 
-      <div className="w-full  rounded-lg m-2 h-[400px]  border-zinc-800 mx-2 p-[2px]">
-          <div className="bg-gradient-to-r from-brandPinkStep6 to-brandPinkStep4 flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[9px] p-[2px]">
-            <Card className="w-full rounded-lg p-2 h-full  border-[0] dark:bg-black ">
-              <CardHeader>
-                <CardTitle>Create project</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
-              </CardHeader>
-              <CardContent>
+      
 
-              </CardContent>
-              <CardFooter className="flex justify-between">
-
-              </CardFooter>
-            </Card>
-          </div>
-        </div>
-
-
-        <div className="w-full  rounded-lg m-2 h-[400px]  border-zinc-800 mx-2 p-[2px]">
-          <div className="bg-gradient-to-r from-brandPinkStep4 to-brandPinkStep3 flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[9px] p-[2px]">
-            <Card className="w-full rounded-lg p-2 h-full  border-[0] dark:bg-black ">
-              <CardHeader>
-                <CardTitle>Create project</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
-              </CardHeader>
-              <CardContent>
-
-              </CardContent>
-              <CardFooter className="flex justify-between">
-
-              </CardFooter>
-            </Card>
-          </div>
-        </div>
         
-      
-      <div className="w-full  rounded-lg m-2 h-[400px]  border-zinc-800 mx-2 p-[2px]">
-          <div className="bg-gradient-to-r from-brandPinkStep1 to-brandPink flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[9px] p-[2px]">
-            <Card className="w-full rounded-lg p-2 h-full border-[0] dark:bg-black">
-              <CardHeader>
-                <CardTitle>Create project</CardTitle>
-                <CardDescription>Deploy your new project in one-click.</CardDescription>
-              </CardHeader>
-              <CardContent>
-
-              </CardContent>
-              <CardFooter className="flex justify-between">
-
-              </CardFooter>
-            </Card>
-          </div>
-        </div>
-      
-      
-      
 
 
         
