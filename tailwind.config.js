@@ -26,7 +26,17 @@ module.exports = {
       },
       colors: {
         brandPink: '#E724C8',
+        brandPinkStep1: '#B925BE',
+        brandPinkStep2: '#B525BD',
+        brandPinkStep3: '#9327BA',
+        brandPinkStep4: '#8F27BA',
+        brandPinkStep5: '#6D28B7',
+        brandPinkStep6: '#6928B7',
         brandBlue: '#3E29B2',
+
+
+
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
