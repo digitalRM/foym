@@ -15,6 +15,9 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        'cardsBreak': '1513px',
+      },
       fontFamily: {
         sans: [
           "Inter var, sans-serif",
