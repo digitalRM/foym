@@ -22,6 +22,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Badge } from "@/components/ui/badge"
  
 
 export default function Home() {
@@ -39,8 +40,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center align-center">
-        <h1 className="font-sans text-xl  text-black dark:text-white lg:text-5xl md:text-3xl sm:text-xl font-bold flex justify-center align-center tracking-tight mt-52">focus on your mission, not your website<span className="text-brandPink font-sans font-semibold lg:text-5xl md:text-3xl sm:text-xl">.</span></h1>
+
+
+      <div className="flex justify-center align-center flex-col mt-52">
+        <h1 className="font-sans text-xl  text-black dark:text-white lg:text-5xl md:text-3xl sm:text-xl font-bold flex justify-center align-center tracking-tight">focus on your mission, not your website<span className="text-brandPink font-sans font-semibold lg:text-5xl md:text-3xl sm:text-xl">.</span></h1>
       </div>
 
       <div className="flex max-w-md justify-center align-center lg:max-w-4xl md:max-w-2xl sm:max-w-lg   text-center mx-auto">
