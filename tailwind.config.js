@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       screens: {
         'cardsBreak': '1513px',
+        'smMax': {'max': '639px'},
       },
       fontFamily: {
         sans: [
@@ -36,6 +37,7 @@ module.exports = {
         brandPinkStep5: '#6D28B7',
         brandPinkStep6: '#6928B7',
         brandBlue: '#3E29B2',
+        mrBack: '#232946',
 
 
 

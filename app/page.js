@@ -61,8 +61,8 @@ export default function Home() {
           <div className="bg-gradient-to-r from-brandBlue to-brandPink flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[50px] dark:rounded-[50px] transition-all p-[1px]">
             <Card className="w-full rounded-[50px] p-12 h-full border-[0] dark:bg-black flex flex-wrap">
 
-              <div className=" w-full cardsBreak:w-fit ">
-                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 cardsBreak:m-4 flex-1 min-w-[477px]">
+              <div className=" w-full cardsBreak:w-fit">
+                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Creating a positive impact shouldn't be a challenge.</CardTitle>
                     <CardDescription className=" mt-3 max-w-lg">That's why we firmly believe that your valuable time is best spent pursuing your mission, rather than being wasted on website development. Break boundaries, change lives, and do what you do best – don’t worry about the rest.</CardDescription>
@@ -70,14 +70,14 @@ export default function Home() {
                   </CardHeader>
                 </Card>
 
-                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-[586px] z-10 relative my-4 mb-0 cardsBreak:m-4 flex-1 min-w-[477px]">
+                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-[586px] z-10 relative my-4 mb-0 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Join our newsletter.</CardTitle>
                     <CardDescription className=" mt-3 max-w-lg">No spam – we promise. </CardDescription>
 
                   </CardHeader>
 
-                  <div className="flex w-full max-w-[95%] items-center space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 relative">
+                  <div className="flex w-full max-w-[95%] items-center space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 smMax:pr-6 relative">
                     <Input type="email" className=' border-zinc-800 rounded-3xl pl-4' placeholder="Email" />
                     <Button type="submit" className="rounded-3xl">Subscribe</Button>
                   </div>   
@@ -86,7 +86,7 @@ export default function Home() {
              
               </div>
 
-                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit z-10 relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px]">
+                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit z-10 relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Even small actions lead to big impact.</CardTitle>
                     <CardDescription className=" mt-3">Widespread change begin locally, driven by non-profits like yours. Small actions cultivate over time, leading to progress. Our world isn’t perfect, and it probably won’t ever be, but we hold the power to leave it just a little better than found it.</CardDescription>
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           
-<footer class="bg-white dark:bg-black">
+<footer class="bg-white mt-80  cardsBreak:mt-80 lg:mt-80 md:mt-80 sm:mt-80 2xl:mt-1 dark:bg-black">
     <div class="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
