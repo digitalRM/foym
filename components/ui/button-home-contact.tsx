@@ -9,11 +9,11 @@ import Layout from "feather-icons-react/build/IconComponents/Layout"
 export function ButtonWithIcon() {
   return (
     <>
-        <Button className=" mr-2">
+        <Button className=" mr-2" disabled>
             <HeartHandshake className="mr-2 h-4 w-4" /> Work Together
         </Button>
 
-        <Button variant="outline" className=" ml-2 border-slate-700 hover:bg-slate-700">
+        <Button variant="outline" className=" ml-2 border-slate-700 hover:bg-slate-700" disabled>
             <Layout className="mr-2 h-4 w-4" /> Previous Work
         </Button>
     </>

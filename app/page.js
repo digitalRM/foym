@@ -28,26 +28,28 @@ import { Badge } from "@/components/ui/badge"
 export default function Home() {
   return (
     <div className="flex-col flex bg-white dark:bg-black h-screen w-screen overflow-x-hidden">
-      <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-50">
+      <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-10 smMax:backdrop-blur-xl">
         <div className="flex h-16 items-center px-4" >
 
         <div className="mr-auto ml-6 flex items-center space-x-4 ">
 
           <Link href={'/'} className="font-sans font-semibold hover:font-black transition-all text-black dark:text-white text-lg">foym<span className="text-brandPink font-sans text-2xl" >.</span></Link>
         </div>
-          <MainNav className="mx-6 bg-white dark:bg-black" />
+          <MainNav className="mx-6 bg-transparent dark:bg-transparent" />
           
         </div>
       </div>
 
 
 
-      <div className="flex justify-center align-center flex-col mt-52">
-        <h1 className="font-sans text-xl  text-black dark:text-white lg:text-5xl md:text-3xl sm:text-xl font-bold flex justify-center align-center tracking-tight">focus on your mission, not your website<span className="text-brandPink font-sans font-semibold lg:text-5xl md:text-3xl sm:text-xl">.</span></h1>
+      <div className="flex justify-center align-center flex-col mt-52 max-w-[290px] sm:max-w-none mx-auto text-center">
+        <h1 className="font-sans text-2xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-2xl font-bold flex justify-center align-center tracking-tight smMax:hidden">focus on your mission, not your website<span className="text-brandPink">.</span></h1>
+        <h1 className="font-sans text-2xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-2xl font-bold flex justify-center align-center tracking-tight hidden smMax:block">focus on your mission, not your website.</h1>
+
       </div>
 
       <div className="flex max-w-md justify-center align-center lg:max-w-4xl md:max-w-2xl sm:max-w-lg   text-center mx-auto">
-        <h3 className="font-sans text-zinc-600 dark:text-slate-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
+        <h3 className="font-sans text-zinc-600 dark:text-slate-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
       </div>
 
       <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-36">
@@ -58,11 +60,11 @@ export default function Home() {
       
       
       <div className="w-full m-2 h-[600px] rounded-[50px] border-zinc-800 mx-2 p-[2px] relative">
-          <div className="bg-gradient-to-r from-brandBlue to-brandPink flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[50px] dark:rounded-[50px] transition-all p-[1px]">
-            <Card className="w-full rounded-[50px] p-12 h-full border-[0] dark:bg-black flex flex-wrap">
+          <div className="bg-gradient-to-r from-brandBlue to-brandPink flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[50px] smMax:rounded-[40px]  transition-all p-[1px]">
+            <Card className="w-full rounded-[50px] smMax:rounded-[40px] p-12 h-full border-[0] dark:bg-black flex flex-wrap smMax:p-3">
 
               <div className=" w-full cardsBreak:w-fit">
-                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
+                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Creating a positive impact shouldn't be a challenge.</CardTitle>
                     <CardDescription className=" mt-3 max-w-lg">That's why we firmly believe that your valuable time is best spent pursuing your mission, rather than being wasted on website development. Break boundaries, change lives, and do what you do best – don’t worry about the rest.</CardDescription>
@@ -70,23 +72,23 @@ export default function Home() {
                   </CardHeader>
                 </Card>
 
-                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-[586px] z-10 relative my-4 mb-0 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
+                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-[586px] z-[6] relative my-4 mb-0 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Join our newsletter.</CardTitle>
                     <CardDescription className=" mt-3 max-w-lg">No spam – we promise. </CardDescription>
 
                   </CardHeader>
 
-                  <div className="flex w-full max-w-[95%] items-center space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 smMax:pr-6 relative">
-                    <Input type="email" className=' border-zinc-800 rounded-3xl pl-4' placeholder="Email" />
-                    <Button type="submit" className="rounded-3xl">Subscribe</Button>
+                  <div className="flex w-full max-w-[95%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 smMax:pr-6 relative smMax:flex-wrap">
+                    <Input disabled type="email" className=' border-zinc-800 rounded-3xl pl-4 min-w-[180px]' placeholder="Email" />
+                    <Button disabled type="submit" className=" rounded-3xl smMax:mt-2  smMax:w-full">Subscribe</Button>
                   </div>   
                 </Card>
 
              
               </div>
 
-                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit z-10 relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
+                <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Even small actions lead to big impact.</CardTitle>
                     <CardDescription className=" mt-3">Widespread change begin locally, driven by non-profits like yours. Small actions cultivate over time, leading to progress. Our world isn’t perfect, and it probably won’t ever be, but we hold the power to leave it just a little better than found it.</CardDescription>
@@ -105,8 +107,8 @@ export default function Home() {
                           Non-Profit organizations & small businesses. 501(c)(3) designation not currently required.
                         </AccordionContent>
                       </AccordionItem>
-                      <AccordionItem value="item-3" className="border-zinc-800">
-                        <AccordionTrigger>Do you provide hosting?</AccordionTrigger>
+                      <AccordionItem value="item-3" className="border-zinc-800 text-left">
+                        <AccordionTrigger className="text-left">Do you provide hosting?</AccordionTrigger>
                         <AccordionContent  className=" text-slate-400">
                          Sadly we are unable to provide hosting at this time, but we will guide you through the process!
                         </AccordionContent>
@@ -132,7 +134,7 @@ export default function Home() {
           </div>
 
           
-<footer class="bg-white mt-80  cardsBreak:mt-80 lg:mt-80 md:mt-80 sm:mt-80 2xl:mt-1 dark:bg-black">
+<footer class="bg-white sm:mt-80 smMax:mt-[600px] 2xl:mt-1 dark:bg-black mt-0 ">
     <div class="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
