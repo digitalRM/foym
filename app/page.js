@@ -23,9 +23,16 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
+
+export const metadata = {
+  title: 'foym.',
+  description: 'focus on your mission, not your website. Our mission is to empower non-profit organizations & small businesses by providing them with websites, for completely free.',
+}
  
 
 export default function Home() {
+
+  
   return (
     <div className="flex-col flex bg-white dark:bg-black h-screen w-screen overflow-x-hidden">
       <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-10 smMax:backdrop-blur-xl">

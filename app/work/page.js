@@ -52,7 +52,7 @@ export default function Work() {
 
               <Card className="dark:bg-black w-1/3 border-zinc-800 rounded-3xl p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[360px] mr-6">
                 <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
-                  <CardTitle className=" text-2xl font-bold">Mukilteo Robotics.</CardTitle>
+                  <CardTitle className="font-sans text-2xl font-bold">Mukilteo Robotics.</CardTitle>
                   <CardDescription></CardDescription>
                   <Separator className="bg-zinc-800" />
 
@@ -60,7 +60,7 @@ export default function Work() {
                     <CardDescription></CardDescription>
 
                     {/* <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM.</CardDescription> */}
-                    <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of S... <Link href='/work/mukilteo-robotics' className="text-slate-300 transition-all hover:text-opacity-90">Read More.</Link>  </CardDescription>
+                    <CardDescription className="font-sans mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of S... <Link href='/work/mukilteo-robotics' className="text-slate-300 transition-all hover:text-opacity-90">Read More.</Link>  </CardDescription>
 
 
                   </div>
@@ -71,8 +71,8 @@ export default function Work() {
 
               <Card className="dark:bg-black w-1/3 border-zinc-800 rounded-3xl p-3 z-[6] relative my-4 mb-0 flex-1 min-w-[360px] flex flex-wrap">
                 <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
-                  <CardTitle className="">Quick Information. <Badge variant="outline" className=" -translate-y-0.5 ml-1 border-brandPink">New</Badge></CardTitle>
-                  <CardDescription className=" mt-3 max-w-3xl">Based in Mukilteo Washington. </CardDescription>
+                  <CardTitle className="font-sans">Quick Information. <Badge variant="outline" className=" -translate-y-0.5 ml-1 border-brandPink font-sans">New</Badge></CardTitle>
+                  <CardDescription className=" mt-3 max-w-3xl font-sans">Based in Mukilteo, Washington. </CardDescription>
 
                   <ul className="font-sans text-slate-300">
                     <li>• Mukilteo Robotics has over 40+ members.</li>
@@ -83,7 +83,7 @@ export default function Work() {
                 </CardHeader>
 
 
-                <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2 smMax:pr-6 relative smMax:flex-wrap">
+                <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2 smMax:pr-6 relative smMax:flex-wrap font-sans">
                   <ButtonWithIconWork />
                 </div>  
               </Card>
@@ -97,13 +97,14 @@ export default function Work() {
                 <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl flex flex-row gap-6 flex-wrap">
 
                 <div className="group">
-                  <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge>
+                  <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge>
                  
                   <Image 
                     src={mrImage}
                     priority
                     width='100%'
                     quality={100}
+                    placeholder="blur"
                    
                     height='100%'
                     className=' rounded-2xl grayscale transition-all opacity-60 -mt-4 hover:grayscale-0 hover:opacity-95'
