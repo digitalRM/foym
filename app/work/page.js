@@ -29,7 +29,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 export default function Work() {
   return (
     <div className="flex-col flex bg-white dark:bg-black h-screen w-screen overflow-x-hidden">
-      <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-50">
+      <div className="border-b border-zinc-800 w-screen bg-black bg-opacity-50 fixed backdrop-blur-sm z-50">
         <div className="flex h-16 items-center px-4" >
 
         <div className="mr-auto ml-6 flex items-center space-x-4 ">

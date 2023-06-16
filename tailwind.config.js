@@ -38,6 +38,7 @@ module.exports = {
         brandPinkStep6: '#6928B7',
         brandBlue: '#3E29B2',
         mrBack: '#232946',
+        mrStep: '#212742',
 
 
 
