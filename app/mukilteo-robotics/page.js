@@ -32,6 +32,8 @@ import { useRef, useEffect } from "react"
 import mrImage from "../mukPhoto.jpeg"
 
 import Image from "next/image"
+
+import UserIcon from "@/components/ui/userIcon"
  
 
 export default function Home() {
@@ -91,62 +93,51 @@ export default function Home() {
 
       <motion.div
         style={{ shadow:colorSwap, backgroundColor: colorSwap, scale}}
-        className=" w-[90%] m-12 ml-auto mr-auto top-24 mt-96 p-12 bg-white h-2/5 shadow-2xl rounded-3xl sticky z-[2]"
+        className=" w-[90%] m-12 ml-auto mr-auto top-24 mt-96 p-1 pt-8 bg-white h-2/5 shadow-2xl rounded-[40px] sticky z-[2]"
       >
+        <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-full h-5/6 absolute bottom-0 left-0"> </div>
         <motion.div style={{scale: scaleCard}} className=" w-full cardsBreak:w-fit">
+        
+
                 <Card className="w-full rounded-[25px] smMax:rounded-[20px] h-full border-[0] bg-transparent flex flex-wrap">
 
               <div className=" w-full cardsBreak:w-fit">
                 <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
-                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl">
-                    <CardTitle className="">Creating a positive impact shouldn't be a challenge.</CardTitle>
-                    <CardDescription className=" mt-3 max-w-lg">That's why we firmly believe that your valuable time is best spent pursuing your mission, rather than being wasted on website development. Break boundaries, change lives, and do what you do best – don’t worry about the rest.</CardDescription>
-
+                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="">Active Members</CardTitle>
+                    <UserIcon />
                   </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold tracking-tight">+40 </div>
+                    <p className="text-xs text-muted-foreground">
+                       3.3x last year
+                    </p>
+                  </CardContent>
                 </Card>
 
-                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-[586px] z-[6] relative my-4 mb-0 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
-                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl">
-                    <CardTitle className="">Join our newsletter. <Badge variant="outline" className=" -translate-y-0.5 ml-1 border-brandPink">Soon</Badge></CardTitle>
-                    <CardDescription className=" mt-3 max-w-lg">No spam – we promise. </CardDescription>
-
+                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
+                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="">Major Sponsors</CardTitle>
+                    <UserIcon />
                   </CardHeader>
-
-                  <div className="flex w-full max-w-[95%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 smMax:pr-6 relative smMax:flex-wrap">
-                    <Input disabled type="email" className=' border-zinc-800 rounded-3xl pl-4 min-w-[180px]' placeholder="Email" />
-                    <Button disabled type="submit" className=" rounded-3xl smMax:mt-2  smMax:w-full">Subscribe</Button>
-                  </div>   
+                  <CardContent>
+                    <div className="text-2xl font-bold tracking-tight">+5</div>
+                    <p className="text-xs text-muted-foreground">
+                        5x last year
+                    </p>
+                  </CardContent>
                 </Card>
 
              
               </div>
 
-                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
+                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] smMax:h-fit">
                   <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl">
-                    <CardTitle className="">Even small actions lead to big impact.</CardTitle>
-                    <CardDescription className=" mt-3">Widespread change begin locally, driven by non-profits like yours. Small actions cultivate over time, leading to progress. Our world isn’t perfect, and it probably won’t ever be, but we hold the power to leave it just a little better than found it.</CardDescription>
+                    <CardTitle className="">What is Mukilteo Robotics?</CardTitle>
+                    <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM knowledge.</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Accordion type="single" collapsible className="w-full border-zinc-800">
-                      <AccordionItem value="item-1" className="border-zinc-800">
-                        <AccordionTrigger>Is this really free?</AccordionTrigger>
-                        <AccordionContent  className=" text-slate-400">
-                          Yes. Consider it a little thank you for your contributions to the world!
-                        </AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="item-2" className="border-zinc-800">
-                        <AccordionTrigger>Who is eligible?</AccordionTrigger>
-                        <AccordionContent className=" text-slate-400">
-                          Non-Profit organizations & small businesses. 501(c)(3) designation not currently required.
-                        </AccordionContent>
-                      </AccordionItem>
-                      <AccordionItem value="item-3" className="border-zinc-800 text-left">
-                        <AccordionTrigger className="text-left">Do you provide hosting?</AccordionTrigger>
-                        <AccordionContent  className=" text-slate-400">
-                         Sadly we are unable to provide hosting at this time, but we will guide you through the process!
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
+                    
                   </CardContent>
                 </Card>   
 
@@ -160,6 +151,21 @@ export default function Home() {
 
               </CardFooter> */}
             </Card>
+
+            {/* <Card>
+                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="text-sm font-medium">
+                      Subscriptions
+                    </CardTitle>
+                    
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold">+2350</div>
+                    <p className="text-xs text-muted-foreground">
+                      +180.1% from last month
+                    </p>
+                  </CardContent>
+                </Card> */}
 
              
         </motion.div>
