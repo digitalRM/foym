@@ -26,6 +26,7 @@
     "feather-icons-react": "^0.6.2",
     "framer-motion": "^10.12.16",
     "lucide-react": "^0.240.0",
+    "motion": "^10.16.2",
     "next": "13.4.4",
     "next-contentlayer": "^0.3.3",
     "postcss": "8.4.24",

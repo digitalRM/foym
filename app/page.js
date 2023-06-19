@@ -50,21 +50,25 @@ export default function Home() {
 
 
 
-      <div className="flex justify-center align-center flex-col mt-52 max-w-[290px] sm:max-w-none mx-auto text-center">
-        <h1 className="font-sans text-2xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-2xl font-bold flex justify-center align-center tracking-tight smMax:hidden">focus on your mission, not your website<span className="text-brandPink">.</span></h1>
-        <h1 className="font-sans text-2xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-2xl font-bold flex justify-center align-center tracking-tight hidden smMax:block">focus on your mission, not your website.</h1>
+      <div className="h-[200vh] w-screen my-[148px] bg-[url('./heroTest2.jpg')] bg-cover bg-center bg-no-repeat ">
+        <div className="flex justify-center align-center flex-col mt-52 max-w-[300px] sm:max-w-none mx-auto text-center">
+          <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter smMax:hidden">focus on your mission, not your website<span className="text-brandPink">.</span></h1>
+          <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter hidden smMax:block">focus on your mission, not your website.</h1>
 
-      </div>
+        </div>
 
-      <div className="flex max-w-md justify-center align-center lg:max-w-4xl md:max-w-2xl sm:max-w-lg   text-center mx-auto">
+      <div className="flex max-w-md justify-center align-center lg:max-w-[900px] md:max-w-2xl sm:max-w-lg   text-center mx-auto">
         <h3 className="font-sans text-zinc-600 dark:text-slate-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
       </div>
 
       <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-36">
         <ButtonWithIcon />
       </div>
+      </div>
 
-      <div className="w-screen h-screen border border-zinc-800 border-x-0 border-b-0 flex justify-evenly p-6 px-0 lg:p-12 md:px-6 sm:px-0 lg:flex-nowrap md:flex-wrap bg-white dark:bg-black relative">
+      
+
+      <div className="w-screen h-screen border border-zinc-800 border-x-0 border-b-0 border-t-0 flex justify-evenly p-6 px-0 lg:p-12 md:px-6 sm:px-0 lg:flex-nowrap md:flex-wrap bg-white dark:bg-black relative">
       
       
       <div className="w-full m-2 h-[600px] rounded-[50px] border-zinc-800 mx-2 p-[2px] relative">

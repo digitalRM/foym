@@ -14,7 +14,7 @@ export function ButtonWithIcon() {
             <HeartHandshake className="mr-2 h-4 w-4" /> Work Together
         </Button>
 
-        <Button variant="outline" className=" ml-2 border-slate-700 hover:bg-slate-700" asChild>
+        <Button variant="outline" className=" ml-2 border-zinc-800 hover:bg-zinc-900 " asChild>
           <div>
           <Layout className="mr-2 h-4 w-4" /> <Link href="/work">Previous Work</Link>
           </div>
