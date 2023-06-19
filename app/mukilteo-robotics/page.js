@@ -34,6 +34,8 @@ import mrImage from "../mukPhoto.jpeg"
 import Image from "next/image"
 
 import UserIcon from "@/components/ui/userIcon"
+
+import VelocityScroll from "@/components/ui/text-scroll"
  
 
 export default function Home() {
@@ -49,6 +51,7 @@ export default function Home() {
     const scaleCard = useTransform(scrollYProgress, [0, 1.8], [1, 0.58])
     const heightScale = useTransform(scrollYProgress, [0, 1], [0.8, 2.4])
     const colorSwap = useTransform(scrollYProgress, [0, .3], ["#232946", "#000"])
+    const colorSwapOp = useTransform(scrollYProgress, [0, .3], ["#000", "#232946"])
     const padding = useTransform(scrollYProgress, [0, .4], [6, 12] )
     
     
@@ -92,7 +95,7 @@ export default function Home() {
 
 
       <motion.div
-        style={{ shadow:colorSwap, backgroundColor: colorSwap, scale}}
+        style={{ shadow:colorSwapOp, backgroundColor: colorSwap, scale}}
         className=" w-[90%] m-12 ml-auto mr-auto top-24 mt-96 p-1 pt-8 bg-white h-2/5 shadow-2xl rounded-[40px] sticky z-[2]"
       >
         <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-full h-5/6 absolute bottom-0 left-0"> </div>
@@ -102,7 +105,7 @@ export default function Home() {
                 <Card className="w-full rounded-[25px] smMax:rounded-[20px] h-full border-[0] bg-transparent flex flex-wrap">
 
               <div className=" w-full cardsBreak:w-fit">
-                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
+                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[427px]">
                   <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="">Active Members</CardTitle>
                     <UserIcon />
@@ -115,7 +118,7 @@ export default function Home() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
+                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[427px]">
                   <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="">Major Sponsors</CardTitle>
                     <UserIcon />
@@ -130,16 +133,36 @@ export default function Home() {
 
              
               </div>
-
-                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] smMax:h-fit">
+              
+                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 pb-1 cardsBreak:ml-0 h-fit smMax:h-fit flex-[1]">
                   <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl">
                     <CardTitle className="">What is Mukilteo Robotics?</CardTitle>
-                    <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM knowledge.</CardDescription>
+                    <div className=" w-full h-full flex place-items-center">
+                                            <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM knowledge.</CardDescription>
+                    </div>
+                  
                   </CardHeader>
                   <CardContent>
                     
                   </CardContent>
                 </Card>   
+
+                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 h-fit pb-0 flex-1 smMax:h-fit">
+                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl">
+                    <CardTitle className=""></CardTitle>
+                    <CardDescription className=" mt-3"></CardDescription>
+                  
+                  </CardHeader>
+                  <CardContent>
+                    
+                  </CardContent>
+                </Card>   
+
+            
+
+                
+
+            
 
              
 
@@ -166,6 +189,9 @@ export default function Home() {
                     </p>
                   </CardContent>
                 </Card> */}
+
+
+                
 
              
         </motion.div>
