@@ -24,6 +24,9 @@ import {
 } from "@/components/ui/accordion"
 import { Badge } from "@/components/ui/badge"
 
+import { ProfileForm } from "@/components/ui/form-test"
+import { ScrollDown } from "@/components/ui/scroll-down"
+
 
 export const metadata = {
   title: 'foym.',
@@ -65,6 +68,9 @@ export default function Home() {
         <ButtonWithIcon />
       </div>
       </div>
+
+      <ScrollDown className='absolute bottom-0 left-0 right-0' />
+
 
       
 
@@ -169,9 +175,7 @@ export default function Home() {
               <div>
                   <h2 className="mb-6 text-sm font-semibold text-black dark:text-white">Legal</h2>
                   <ul className="text-gray-600 dark:text-gray-400 font-medium">
-                      <li className="mb-4">
-                          <a href="#" className="hover:underline font-sans font-normal">Privacy Policy</a>
-                      </li>
+                      
                       <li>
                           <a href="#" className="hover:underline font-sans font-normal">Terms &amp; Conditions</a>
                       </li>

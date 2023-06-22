@@ -60,7 +60,7 @@ export default function Work() {
                     <CardDescription></CardDescription>
 
                     {/* <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM.</CardDescription> */}
-                    <CardDescription className="font-sans mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of S... <Link href='/work/mukilteo-robotics' className="text-slate-300 transition-all hover:text-opacity-90">Read More.</Link>  </CardDescription>
+                    <CardDescription className="font-sans mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of S... <Link href='/mukilteo-robotics' className="text-slate-300 transition-all hover:text-opacity-90">Read More.</Link>  </CardDescription>
 
 
                   </div>
@@ -97,7 +97,7 @@ export default function Work() {
                 <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl flex flex-row gap-6 flex-wrap">
 
                 <div className="group">
-                  <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge>
+                  {/* <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge> */}
                  
                   <Image 
                     src={mrImage}
@@ -155,9 +155,6 @@ export default function Work() {
               <div>
                   <h2 className="mb-6 text-sm font-semibold text-black dark:text-white">Legal</h2>
                   <ul className="text-gray-600 dark:text-gray-400 font-medium">
-                      <li className="mb-4">
-                          <a href="#" className="hover:underline font-sans font-normal">Privacy Policy</a>
-                      </li>
                       <li>
                           <a href="#" className="hover:underline font-sans font-normal">Terms &amp; Conditions</a>
                       </li>
