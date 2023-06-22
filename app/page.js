@@ -61,7 +61,7 @@ export default function Home() {
         <h3 className="font-sans text-zinc-600 dark:text-slate-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
       </div>
 
-      <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-36">
+      <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-64">
         <ButtonWithIcon />
       </div>
       </div>
