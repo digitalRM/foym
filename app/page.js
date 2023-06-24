@@ -28,6 +28,8 @@ import { ProfileForm } from "@/components/ui/form-test"
 import { ScrollDown } from "@/components/ui/scroll-down"
 
 
+
+
 export const metadata = {
   title: 'foym.',
   description: 'focus on your mission, not your website. Our mission is to empower non-profit organizations & small businesses by providing them with websites, for completely free.',
