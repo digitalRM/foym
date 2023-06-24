@@ -4,16 +4,19 @@ import { cn } from "@/lib/utils"
 
 import { MainNavContact } from "./main-nav-contact"
 
+import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-
-
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { ProfileForm } from "./form-test"
 
 
 export function MainNav({
@@ -44,15 +47,29 @@ export function MainNav({
       <Dialog>
         <DialogTrigger className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
         Contact</DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Are you sure absolutely sure?</DialogTitle>
-            <DialogDescription>
-              This action cannot be undone. This will permanently delete your account
-              and remove your data from our servers.
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
+      <DialogContent className="sm:max-w-[425px] bg-black border-zinc-800 min-w-[33%]">
+        <DialogHeader>
+          <DialogTitle>Contact Us</DialogTitle>
+          <DialogDescription>
+            Make changes to your profile here. Click save when you're done.
+          </DialogDescription>
+        </DialogHeader>
+        <ProfileForm />
+        {/* <div className="grid gap-4 py-4">
+          <div className="grid grid-cols-4 items-center gap-4 border-zinc-800 ">
+            <Label htmlFor="name" className="text-right">
+              Name
+            </Label>
+            <Input id="name" value="Pedro Duarte" className="col-span-3" />
+          </div>
+          <div className="grid grid-cols-4 items-center gap-4">
+            <Label htmlFor="username" className="text-right">
+              Username
+            </Label>
+            <Input id="username" value="@peduarte" className="col-span-3" />
+          </div>
+        </div> */}
+      </DialogContent>
       </Dialog>
 
 

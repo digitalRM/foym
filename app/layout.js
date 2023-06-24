@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className=' bg-black dark:bg-black dark ' >
+    <html lang="en" className=' bg-black dark:bg-black dark overflow-x-hidden ' >
       <head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
