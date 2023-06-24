@@ -4,6 +4,17 @@ import { cn } from "@/lib/utils"
 
 import { MainNavContact } from "./main-nav-contact"
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
+
+
 
 export function MainNav({
   className,
@@ -29,7 +40,23 @@ export function MainNav({
       >
         Our Work
       </Link>
-      <MainNavContact />
+
+      <Dialog>
+        <DialogTrigger className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
+        Contact</DialogTrigger>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Are you sure absolutely sure?</DialogTitle>
+            <DialogDescription>
+              This action cannot be undone. This will permanently delete your account
+              and remove your data from our servers.
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
+
+
+      
 
     </nav>
   )
