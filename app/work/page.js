@@ -107,7 +107,7 @@ export default function Work() {
                     placeholder="blur"
                    
                     height='100%'
-                    className=' rounded-2xl grayscale transition-all opacity-60 -mt-4 hover:grayscale-0 hover:opacity-95'
+                    className=' rounded-2xl grayscale transition-all opacity-60 hover:grayscale-0 hover:opacity-95'
                     alt="Group picture of members of Mukilteo Robotics at a championship event in Washington State."
                   /> 
                 </div>

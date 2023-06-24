@@ -34,8 +34,11 @@ import mrImage from "../mukPhoto.jpeg"
 import Image from "next/image"
 
 import UserIcon from "@/components/ui/userIcon"
+import TrendingUpp from "@/components/ui/trendingUp"
+import DollarIcon from "@/components/ui/dollarSignIcon"
 
 import VelocityScroll from "@/components/ui/text-scroll"
+import DollarSignIcon from "@/components/ui/dollarSignIcon"
  
 
 export default function Home() {
@@ -104,61 +107,88 @@ export default function Home() {
 
                 <Card className="w-full rounded-[25px] smMax:rounded-[20px] h-full border-[0] bg-transparent flex flex-wrap">
 
-              <div className=" w-full cardsBreak:w-fit">
+            <div className="flex ">
+
+            <div className=" w-full cardsBreak:w-fit">
                 <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[427px]">
                   <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="">Active Members</CardTitle>
+                    <CardTitle className="">New Active Members</CardTitle>
                     <UserIcon />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold tracking-tight">+40 </div>
-                    <p className="text-xs text-muted-foreground">
-                       3.3x last year
+                    <div className="text-2xl font-bold tracking-tight ">+23 Members</div>
+                    <p className="text-xs text-muted-foreground mt-1.5 -mb-1.5">
+                       +48% last year
+                    </p>
+                  </CardContent>
+
+                </Card>
+
+                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[427px]">
+                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="">New Major Sponsors</CardTitle>
+                    <TrendingUpp/>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold tracking-tight">+5 Sponsors</div>
+                    <p className="text-xs text-muted-foreground mt-1.5 -mb-1.5">
+                        +5x last year
                     </p>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[427px]">
                   <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="">Major Sponsors</CardTitle>
-                    <UserIcon />
+                    <CardTitle className="">Amount Fundraised</CardTitle>
+                    <DollarIcon />
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold tracking-tight">+5</div>
-                    <p className="text-xs text-muted-foreground">
-                        5x last year
+                    <div className="text-2xl font-bold tracking-tight">+ $23,301.05</div>
+                    <p className="text-xs text-muted-foreground mt-1.5 -mb-1.5">
+                        +3.71x last year
                     </p>
                   </CardContent>
                 </Card>
 
              
               </div>
-              
-                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 pb-1 cardsBreak:ml-0 h-fit smMax:h-fit flex-[1]">
+
+              <div className=" w-full cardsBreak:w-fit">
+              <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 pb-1 cardsBreak:ml-0 h-fit smMax:h-fit flex-[1] min-w-[600px]">
                   <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl">
                     <CardTitle className="">What is Mukilteo Robotics?</CardTitle>
-                    <div className=" w-full h-full flex place-items-center">
+                    <div className=" w-full h-full flex place-items-center mb-2.5">
                                             <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM knowledge.</CardDescription>
                     </div>
                   
                   </CardHeader>
-                  <CardContent>
-                    
-                  </CardContent>
-                </Card>   
-
-                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 h-fit pb-0 flex-1 smMax:h-fit">
-                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl">
-                    <CardTitle className=""></CardTitle>
-                    <CardDescription className=" mt-3"></CardDescription>
                   
-                  </CardHeader>
+                </Card>   
+
+
+                <Card className="bg-black bg-opacity-10 border-mrStep rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4  pb-1 cardsBreak:ml-0 h-fit smMax:h-fit flex-[1] min-w-[600px] ">
+
                   <CardContent>
+                  <video className="w-screen h-auto max-w-full my-6">
+                    <source src="/docs/videos/flowbite.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
                     
                   </CardContent>
                 </Card>   
 
-            
+
+              </div>
+             
+
+
+
+            </div>
+
+              
+
+              
 
                 
 
