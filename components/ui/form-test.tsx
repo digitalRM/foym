@@ -136,8 +136,8 @@ export function ProfileForm() {
                     </Button>
                   </FormControl>
                 </PopoverTrigger>
-                <PopoverContent className="p-0">
-                  <Command>
+                <PopoverContent className="p-0 w-full">
+                  <Command className=" w-full">
                     <CommandInput placeholder="Search Organization Type..." />
                     <CommandEmpty>No Organization Type found.</CommandEmpty>
                     <CommandGroup>
@@ -165,7 +165,7 @@ export function ProfileForm() {
                 </PopoverContent>
               </Popover>
               <FormDescription>
-                This is the orgType that will be used in the dashboard.
+                This is the Organization Type that will be used in the dashboard.
               </FormDescription>
               <FormMessage />
             </FormItem>
