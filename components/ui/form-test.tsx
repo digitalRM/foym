@@ -45,6 +45,8 @@ import { toast } from "@/components/ui/use-toast"
 
 import { Check, ChevronsUpDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Textarea } from "@/components/ui/textarea"
 
 const orgTypes = [
   { label: "English", value: "en" },
@@ -67,6 +69,18 @@ const formSchema = z.object({
   orgType: z.string({
     required_error: "Please select a orgType.",
   }),
+  mobile: z.boolean().default(false).optional(),
+  bio: z
+  .string()
+  .min(90, {
+    message: "Organization Information must be at least 90 characters.",
+  })
+  .max(500, {
+    message: "Organization Information must not be longer than 500 characters.",
+  }),
+  email: z.string().email({
+    message: "Please enter a valid email.",
+  }),
 })
 
 
@@ -76,6 +90,8 @@ export function ProfileForm() {
         resolver: zodResolver(formSchema),
         defaultValues: {
           name: "",
+          orgType: "",
+          mobile: false,
         },
       })
     
@@ -93,7 +109,7 @@ export function ProfileForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7">
         <FormField
           control={form.control}
           name="name"
@@ -105,6 +121,22 @@ export function ProfileForm() {
               </FormControl>
               <FormDescription>
                 Please enter your full name.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email</FormLabel>
+              <FormControl>
+                <Input placeholder="jane@domain.com" type="name" {...field} />
+              </FormControl>
+              <FormDescription>
+                Please enter your preferred email.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -171,6 +203,51 @@ export function ProfileForm() {
             </FormItem>
           )}
         />
+        <FormField
+          control={form.control}
+          name="bio"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Organization Information</FormLabel>
+              <FormControl>
+                <Textarea
+                  placeholder="Tell us a little bit about your organization. "
+                  {...field}
+                />
+              </FormControl>
+              <FormDescription>
+              What do you do? What are you intrested for in a website? etc.
+              </FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="mobile"
+          render={({ field }) => (
+            <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+              <FormControl>
+                <Checkbox
+                  checked={field.value}
+                  onCheckedChange={field.onChange}
+                />
+              </FormControl>
+              <div className="space-y-1 leading-none">
+                <FormLabel>
+                  Is the information that you have provided is correct?
+                </FormLabel>
+                <FormDescription>
+                  Please double check your information before submitting!
+                </FormDescription>
+              </div>
+            </FormItem>
+          )}
+        />
+
+        
+          
+        
         <DialogFooter>
           <Button type="submit" className="w-full">Submit</Button>
         </DialogFooter>

@@ -60,7 +60,7 @@ export default function Work() {
                     <CardDescription></CardDescription>
 
                     {/* <CardDescription className=" mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM.</CardDescription> */}
-                    <CardDescription className="font-sans mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of S... <Link href='/mukilteo-robotics' className="text-slate-300 transition-all hover:text-opacity-90">Read More.</Link>  </CardDescription>
+                    <CardDescription className="font-sans mt-3">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. Students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of S... <Link href='/mukilteo-robotics' className="text-zinc-300 transition-all hover:text-opacity-90">Read More.</Link>  </CardDescription>
 
 
                   </div>
@@ -74,7 +74,7 @@ export default function Work() {
                   <CardTitle className="font-sans">Quick Information. <Badge variant="outline" className=" -translate-y-0.5 ml-1 border-brandPink font-sans">New</Badge></CardTitle>
                   <CardDescription className=" mt-3 max-w-3xl font-sans">Based in Mukilteo, Washington. </CardDescription>
 
-                  <ul className="font-sans text-slate-300">
+                  <ul className="font-sans text-zinc-300">
                     <li>• Mukilteo Robotics has over 40+ members.</li>
                     <li>• Mukilteo Robotics is completely free for all its members.</li>
                     <li>• Mukilteo Robotics raised over $20,000 for their 2022 - 2023 season.</li>

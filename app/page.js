@@ -63,7 +63,7 @@ export default function Home() {
         </div>
 
       <div className="flex max-w-md justify-center align-center lg:max-w-[900px] md:max-w-2xl sm:max-w-lg   text-center mx-auto">
-        <h3 className="font-sans text-zinc-600 dark:text-slate-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
+        <h3 className="font-sans text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
       </div>
 
       <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-64">
@@ -117,19 +117,19 @@ export default function Home() {
                     <Accordion type="single" collapsible className="w-full border-zinc-800">
                       <AccordionItem value="item-1" className="border-zinc-800">
                         <AccordionTrigger>Is this really free?</AccordionTrigger>
-                        <AccordionContent  className=" text-slate-400">
+                        <AccordionContent  className=" text-zinc-400">
                           Yes. Consider it a little thank you for your contributions to the world!
                         </AccordionContent>
                       </AccordionItem>
                       <AccordionItem value="item-2" className="border-zinc-800">
                         <AccordionTrigger>Who is eligible?</AccordionTrigger>
-                        <AccordionContent className=" text-slate-400">
+                        <AccordionContent className=" text-zinc-400">
                           Non-Profit organizations & small businesses. 501(c)(3) designation not currently required.
                         </AccordionContent>
                       </AccordionItem>
                       <AccordionItem value="item-3" className="border-zinc-800 text-left">
                         <AccordionTrigger className="text-left">Do you provide hosting?</AccordionTrigger>
-                        <AccordionContent  className=" text-slate-400">
+                        <AccordionContent  className=" text-zinc-400">
                          Sadly we are unable to provide hosting at this time, but we will guide you through the process!
                         </AccordionContent>
                       </AccordionItem>

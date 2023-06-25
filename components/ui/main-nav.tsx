@@ -47,11 +47,11 @@ export function MainNav({
       <Dialog>
         <DialogTrigger className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
         Contact</DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-black border-zinc-800 min-w-[33%]">
+      <DialogContent className="sm:max-w-[525px] bg-black border-zinc-800 min-w-[43%]">
         <DialogHeader>
           <DialogTitle>Contact Us</DialogTitle>
           <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
+            We'll get back to you as soon as possible.
           </DialogDescription>
         </DialogHeader>
         <ProfileForm />
