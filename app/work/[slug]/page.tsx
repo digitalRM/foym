@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import { allDocs } from 'contentlayer/generated'
 import { notFound } from 'next/navigation'
-import { Mdx } from 'components/ui/mdx'
 import { MainNavNon } from "@/components/ui/main-nav-noton"
 
 import Link from "next/link"
@@ -44,7 +43,6 @@ const page = async ({ params }: DocPageProps) => {
       <h1 className="font-sans text-xl  text-black dark:text-white lg:text-5xl md:text-3xl sm:text-xl font-bold flex justify-center align-middle tracking-tight">{doc.title}<span className="text-brandPink font-sans font-semibold lg:text-5xl md:text-3xl sm:text-xl">.</span></h1>
 
       
-        <Mdx code={doc.body.code}/>
       </div>
 
         
