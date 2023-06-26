@@ -18,7 +18,8 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ProfileForm } from "./form-test"
 
-export function MainNavWork({
+
+export function MainNav({
   className,
   ...props
 }: React.HTMLAttributes<HTMLElement>) {
@@ -32,13 +33,13 @@ export function MainNavWork({
     >
       <Link
         href="/"
-        className="text-sm font-medium text-neutral-500 transition-colors hover:text-primary font-sans"
+        className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans"
       >
         Home
       </Link>
       <Link
         href="/work"
-        className="text-sm font-medium text-primary transition-colors hover:text-primary font-sans"
+        className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans"
       >
         Our Work
       </Link>

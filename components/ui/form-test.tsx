@@ -49,15 +49,15 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Textarea } from "@/components/ui/textarea"
 
 const orgTypes = [
-  { label: "English", value: "en" },
-  { label: "French", value: "fr" },
-  { label: "German", value: "de" },
-  { label: "Spanish", value: "es" },
-  { label: "Portuguese", value: "pt" },
-  { label: "Russian", value: "ru" },
-  { label: "Japanese", value: "ja" },
-  { label: "Korean", value: "ko" },
-  { label: "Chinese", value: "zh" },
+  { label: "Registered 501(c)(3)", value: "501c3" },
+  { label: "Registered Small Business", value: "registeredSmallBusiness" },
+  { label: "State Registered Non-Profit", value: "stateRegisteredNonProfit" },
+  { label: "Unregistered Orginization", value: "unregisteredOrginization" },
+  { label: "Educational Institution", value: "educationalInstitution" },
+  { label: "Community Service Organization", value: "communityServiceOrganization" },
+  { label: "Environmental Conservation Group", value: "environmentalConservationGroup" },
+  { label: "Other", value: "other" },
+
 ] as const
 
 const formSchema = z.object({
@@ -66,8 +66,8 @@ const formSchema = z.object({
   }).min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  orgType: z.string({
-    required_error: "Please select a orgType.",
+  organizationType: z.string({
+    required_error: "Please select a Organization Type.",
   }),
   mobile: z.boolean().default(false).optional(),
   bio: z
@@ -90,20 +90,19 @@ export function ProfileForm() {
         resolver: zodResolver(formSchema),
         defaultValues: {
           name: "",
-          orgType: "",
+          organizationType: "",
           mobile: false,
         },
       })
-    
-      // 2. Define a submit handler.
+
+
+
+  
       function onSubmit(data: z.infer<typeof formSchema>) {
+        
         toast({
-          title: "You submitted the following values:",
-          description: (
-            <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-              <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-            </pre>
-          ),
+          title: "Thanks for submitting!",
+          description: "We'll get back to you as soon as possible.",
         })
       }
 
@@ -144,7 +143,7 @@ export function ProfileForm() {
         />
         <FormField
           control={form.control}
-          name="orgType"
+          name="organizationType"
           render={({ field }) => (
             <FormItem className="flex flex-col">
               <FormLabel>Organization Type</FormLabel>
@@ -178,7 +177,7 @@ export function ProfileForm() {
                           value={orgType.value}
                           key={orgType.value}
                           onSelect={(value) => {
-                            form.setValue("orgType", value)
+                            form.setValue("organizationType", value)
                           }}
                         >
                           <Check
@@ -197,7 +196,7 @@ export function ProfileForm() {
                 </PopoverContent>
               </Popover>
               <FormDescription>
-                This is the Organization Type that will be used in the dashboard.
+              Try your best to choose the organization type that you feel is most accurate.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -221,32 +220,7 @@ export function ProfileForm() {
               <FormMessage />
             </FormItem>
           )}
-        />
-        <FormField
-          control={form.control}
-          name="mobile"
-          render={({ field }) => (
-            <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
-              <FormControl>
-                <Checkbox
-                  checked={field.value}
-                  onCheckedChange={field.onChange}
-                />
-              </FormControl>
-              <div className="space-y-1 leading-none">
-                <FormLabel>
-                  Is the information that you have provided is correct?
-                </FormLabel>
-                <FormDescription>
-                  Please double check your information before submitting!
-                </FormDescription>
-              </div>
-            </FormItem>
-          )}
-        />
-
-        
-          
+        /> 
         
         <DialogFooter>
           <Button type="submit" className="w-full">Submit</Button>

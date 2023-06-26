@@ -15,7 +15,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children} 
+        <Toaster />
+      </body>
+     
     </html>
   )
 }

@@ -1,6 +1,6 @@
 'use client'
 import { UserNav } from "@/components/ui/user-nav"
-import { MainNav } from "@/components/ui/main-nav"
+import { MainNav } from "@/components/ui/main-nav-work-page"
 
 import Link from "next/link"
 import { ButtonWithIcon } from "@/components/ui/button-home-contact"
@@ -74,7 +74,7 @@ export default function Home() {
 
         <div className="mr-auto ml-6 flex items-center space-x-4 ">
 
-          <Link href={'/'} className="font-sans font-semibold hover:font-black transition-all text-black dark:text-white text-lg">foym<span className="text-brandPink font-sans text-2xl" >.</span></Link>
+          <Link href={'/'} className="font-sans font-semibold hover:font-bold transition-all text-black dark:text-white text-lg">foym<span className="text-brandPink font-sans text-2xl" >.</span></Link>
         </div>
           <MainNav className="mx-6 bg-transparent dark:bg-transparent" />
           
