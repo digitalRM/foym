@@ -71,7 +71,7 @@ export default function Home() {
       </div>
       </div>
 
-      <a href="#card-with-more-information" >
+      <a href="#card" aria-label="Scroll Down" >
         <ScrollDown className='absolute bottom-0 left-0 right-0' />
       </a>
 
@@ -83,7 +83,7 @@ export default function Home() {
       <div className="w-screen h-screen border border-zinc-800 border-x-0 border-b-0 border-t-0 flex justify-evenly p-6 px-0 lg:p-12 md:px-6 sm:px-0 lg:flex-nowrap md:flex-wrap bg-white dark:bg-black relative">
       
       
-      <div id="card-with-more-information" className="w-full m-2 h-[600px] rounded-[50px] border-zinc-800 mx-2 p-[2px] relative">
+      <div id="card" className="w-full m-2 h-[600px] rounded-[50px] border-zinc-800 mx-2 p-[2px] relative">
           <div className="bg-gradient-to-r from-brandBlue to-brandPink flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[50px] smMax:rounded-[40px]  transition-all p-[1px]">
             <Card className="w-full rounded-[50px] smMax:rounded-[40px] p-12 h-full border-[0] dark:bg-black flex flex-wrap smMax:p-3">
 
