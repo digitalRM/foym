@@ -53,8 +53,8 @@ export default function Home() {
     const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1.4])
     const scaleCard = useTransform(scrollYProgress, [0, 1.8], [1, 0.58])
     const heightScale = useTransform(scrollYProgress, [0, 1], [0.8, 2.4])
-    const colorSwap = useTransform(scrollYProgress, [0, .3], ["#232946", "#000"])
-    const colorSwapOp = useTransform(scrollYProgress, [0, .3], ["#000", "#232946"])
+    const colorSwap = useTransform(scrollYProgress, [0, .3], ["#10152e", "#000"])
+    const colorSwapOp = useTransform(scrollYProgress, [0, .3], ["#000", "#10152e"])
     const padding = useTransform(scrollYProgress, [0, .4], [6, 12] )
     
     
@@ -149,6 +149,21 @@ export default function Home() {
                     </p>
                   </CardContent>
                 </Card>
+
+                <Card className="bg-black border-mrStep bg-opacity-10 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[427px]">
+                  <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+                    <CardTitle className="">Amount Fundraised</CardTitle>
+                    <DollarIcon />
+                  </CardHeader>
+                  <CardContent>
+                    <div className="text-2xl font-bold tracking-tight">+ $23,301.05</div>
+                    <p className="text-xs text-muted-foreground mt-1.5 -mb-1.5">
+                        +3.71x last year
+                    </p>
+                  </CardContent>
+                </Card>
+
+                
 
              
               </div>
@@ -251,6 +266,21 @@ export default function Home() {
     <motion.section
         
         className="flex-col flex bg-gradient-to-b from-black via-black to-mrBack w-screen h-[150vh]"
+       >
+
+
+
+
+
+
+      
+
+
+    </motion.section>
+
+    <motion.section
+        
+        className="flex-col flex bg-gradient-to-b from-mrBack via-mrBack to-mrBack w-screen h-[150vh]"
        >
 
 
