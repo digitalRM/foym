@@ -39,13 +39,13 @@ export function MainNav({
       </Link>
       <Link
         href="/work"
-        className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans"
+        className="text-sm font-medium text-neutral-400 text-muted-foreground transition-colors hover:text-primary font-sans"
       >
         Our Work
       </Link>
 
       <Dialog>
-        <DialogTrigger className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
+        <DialogTrigger className="text-sm font-medium text-neutral-400 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
         Contact</DialogTrigger>
       <DialogContent className="sm:max-w-[525px] bg-black border-zinc-800 min-w-[43%]">
         <DialogHeader>
