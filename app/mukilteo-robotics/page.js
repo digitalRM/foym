@@ -91,7 +91,7 @@ export default function Home() {
         <h1 className="font-sans text-2xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-2xl font-bold flex justify-center align-center tracking-tight">mukilteo robotics<span className="text-brandPink">.</span></h1>
 
         <div className="flex max-w-md justify-center align-center mt-20 lg:max-w-4xl md:max-w-2xl sm:max-w-lg text-center mx-auto fixed left-0 right-0">
-            <h3 className="font-sans text-zinc-600 dark:text-slate-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">VEX Robotics organization based in Mukilteo, Washington. </h3>
+            <h3 className="font-sans text-zinc-600 dark:text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">VEX Robotics organization based in Mukilteo, Washington. </h3>
         </div>
       
       </motion.div>

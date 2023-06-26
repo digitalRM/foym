@@ -24,7 +24,11 @@ import mrImage from "../mukPhoto.jpeg"
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
 
-
+export const metadata = {
+  title: 'foym. - our work.',
+  description: 'focus on your mission, not your website. Our mission is to empower non-profit organizations & small businesses by providing them with websites, for completely free.',
+}
+ 
 
 export default function Work() {
   return (

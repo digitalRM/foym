@@ -115,20 +115,20 @@ export default function Home() {
                 <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Even small actions lead to big impact.</CardTitle>
-                    <CardDescription className=" mt-3">Widespread change begin locally, driven by non-profits like yours. Small actions cultivate over time, leading to progress. Our world isn’t perfect, and it probably won’t ever be, but we hold the power to leave it just a little better than found it.</CardDescription>
+                    <CardDescription className=" mt-3">Widespread change begins locally, driven by organizations like yours. Small actions cultivate over time, leading to progress. Our world isn't perfect, and it probably won't ever be, but we hold the power to leave it just a little better than we found it.</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Accordion type="single" collapsible className="w-full border-zinc-800">
                       <AccordionItem value="item-1" className="border-zinc-800">
                         <AccordionTrigger>Is this really free?</AccordionTrigger>
                         <AccordionContent  className=" text-zinc-400">
-                          Yes. Consider it a little thank you for your contributions to the world!
+                          Yes!
                         </AccordionContent>
                       </AccordionItem>
                       <AccordionItem value="item-2" className="border-zinc-800">
                         <AccordionTrigger>Who is eligible?</AccordionTrigger>
                         <AccordionContent className=" text-zinc-400">
-                          Non-Profit organizations & small businesses. 501(c)(3) designation not currently required.
+                         Registered 501(c)(3)s, small businesses, state-registered non-profits, unregistered organizations, and more! <Link href="/eligibility" className="text-zinc-300">View Eligibility</Link>
                         </AccordionContent>
                       </AccordionItem>
                       <AccordionItem value="item-3" className="border-zinc-800 text-left">

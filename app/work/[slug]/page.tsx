@@ -24,7 +24,7 @@ async function getDocFromParams(slug: string) {
   
 
 const page = async ({ params }: DocPageProps) => {
-    const doc = await getDocFromParams(params.slug)
+    const doc = await getDocFromParams(params.slug.join('/'))
     return (
       <div className="flex-col flex bg-white dark:bg-black h-screen w-screen overflow-x-hidden bg-gradient-to-b from-black via-black to-mrBack">
       <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-50">
