@@ -63,7 +63,7 @@ export default function Home() {
         </div>
 
       <div className="flex max-w-md justify-center align-center lg:max-w-[900px] md:max-w-2xl sm:max-w-lg   text-center mx-auto">
-        <h3 className="font-sans text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h3>
+        <h2 className="font-sans text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h2>
       </div>
 
       <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-64">
@@ -71,7 +71,7 @@ export default function Home() {
       </div>
       </div>
 
-      <a href="#card" >
+      <a href="#card-with-more-information" >
         <ScrollDown className='absolute bottom-0 left-0 right-0' />
       </a>
 
@@ -83,7 +83,7 @@ export default function Home() {
       <div className="w-screen h-screen border border-zinc-800 border-x-0 border-b-0 border-t-0 flex justify-evenly p-6 px-0 lg:p-12 md:px-6 sm:px-0 lg:flex-nowrap md:flex-wrap bg-white dark:bg-black relative">
       
       
-      <div id="card" className="w-full m-2 h-[600px] rounded-[50px] border-zinc-800 mx-2 p-[2px] relative">
+      <div id="card-with-more-information" className="w-full m-2 h-[600px] rounded-[50px] border-zinc-800 mx-2 p-[2px] relative">
           <div className="bg-gradient-to-r from-brandBlue to-brandPink flex h-full w-full items-center justify-center bg-white dark:bg-black rounded-[50px] smMax:rounded-[40px]  transition-all p-[1px]">
             <Card className="w-full rounded-[50px] smMax:rounded-[40px] p-12 h-full border-[0] dark:bg-black flex flex-wrap smMax:p-3">
 
