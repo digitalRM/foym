@@ -134,7 +134,7 @@ export default function Home() {
                       <AccordionItem value="item-3" className="border-zinc-800 text-left">
                         <AccordionTrigger className="text-left">Do you provide hosting?</AccordionTrigger>
                         <AccordionContent  className=" text-zinc-400">
-                         Sadly we are unable to provide hosting at this time, but we will guide you through the process!
+                         We are unable to provide hosting at this time, but we will guide you through the process of hosting for free.
                         </AccordionContent>
                       </AccordionItem>
                     </Accordion>
