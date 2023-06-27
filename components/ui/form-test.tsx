@@ -50,24 +50,24 @@ import { Textarea } from "@/components/ui/textarea"
 
 const orgTypes = [
   { label: "Registered 501(c)(3)", value: "501c3" },
-  { label: "Registered Small Business", value: "registeredSmallBusiness" },
-  { label: "State Registered Non-Profit", value: "stateRegisteredNonProfit" },
-  { label: "Unregistered Orginization", value: "unregisteredOrginization" },
-  { label: "Educational Institution", value: "educationalInstitution" },
-  { label: "Community Service Organization", value: "communityServiceOrganization" },
-  { label: "Environmental Conservation Group", value: "environmentalConservationGroup" },
+  { label: "Registered Small Business", value: "regis" },
+  { label: "State Registered Non-Profit", value: "state" },
+  { label: "Unregistered Orginization", value: "unr" },
+  { label: "Educational Institution", value: "educa" },
+  { label: "Community Service Organization", value: "commu" },
+  { label: "Environmental Conservation Group", value: "envi" },
   { label: "Other", value: "other" },
 
 ] as const
 
 const formSchema = z.object({
-  name: z.string().regex(/^[a-zA-Z]+$/, {
-    message: "Your name must only contain letters.",
-  }).min(2, {
-    message: "Username must be at least 2 characters.",
+  name: z.string().min(2, {
+    message: "Name must be at least 2 characters.",
   }),
   organizationType: z.string({
     required_error: "Please select a Organization Type.",
+  }).min(1, {
+    message: "Please select a Organization Type.",
   }),
   mobile: z.boolean().default(false).optional(),
   bio: z
@@ -89,26 +89,53 @@ export function ProfileForm() {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
+          email: "",
           name: "",
           organizationType: "",
-          mobile: false,
+          bio: "",
         },
       })
 
 
 
   
-      function onSubmit(data: z.infer<typeof formSchema>) {
+      async function onSubmit(data: z.infer<typeof formSchema>) {
+
+        try {
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            body: JSON.stringify({
+              name: data.name,
+              email: data.email,
+              organizationType: data.organizationType,
+              mobile: data.mobile,
+              bio: data.bio,
+            }),
+            headers: {
+              'content-type': 'application/json',
+            },
+          })
+          if (res.status === 200) {
+            form.reset()
+            toast({
+              title: "Thanks for submitting!",
+              description: "We'll get back to you as soon as possible.",
+            })
+          }
+        } catch (err: any) {
+          console.error('Err', err)
+          toast({
+            title: "Uh oh! Something went wrong.",
+            description: "There was a problem sending your message. Please try again later.",
+          })
+        }
+  
         
-        toast({
-          title: "Thanks for submitting!",
-          description: "We'll get back to you as soon as possible.",
-        })
-      }
+       }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2 sm:space-y-7">
         <FormField
           control={form.control}
           name="name"
@@ -144,6 +171,7 @@ export function ProfileForm() {
         <FormField
           control={form.control}
           name="organizationType"
+          
           render={({ field }) => (
             <FormItem className="flex flex-col">
               <FormLabel>Organization Type</FormLabel>
