@@ -14,14 +14,14 @@ export function ButtonWithIconWork() {
         
         </Button> */}
 
-        <Link className="group rounded-3xl smMax:mt-2  smMax:w-full w-full font-sans" href="/mukilteo-robotics">
+        <a href="https://mukilteorobotics.org" className="group rounded-3xl smMax:mt-2  smMax:w-full w-full font-sans" rel="noopener noreferrer">
           <Button className="group rounded-3xl smMax:mt-2  smMax:w-full w-full font-sans" asChild>
             <div>
-            Learn More<ArrowUpRight className=' transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-0.5'  height='16' width='16'/>
+            Visit Website<ArrowUpRight className=' transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-0.5'  height='16' width='16'/>
             </div>
               
           </Button>
-        </Link>
+        </a>
 
         
     </>
