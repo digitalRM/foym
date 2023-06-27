@@ -64,7 +64,7 @@ const formSchema = z.object({
   name: z.string().min(2, {
     message: "Name must be at least 2 characters.",
   }),
-  organizationType: z.string({
+  orgType: z.string({
     required_error: "Please select a Organization Type.",
   }).min(1, {
     message: "Please select a Organization Type.",
@@ -91,7 +91,7 @@ export function ProfileForm() {
         defaultValues: {
           email: "",
           name: "",
-          organizationType: "",
+          orgType: "",
           bio: "",
         },
       })
@@ -107,7 +107,7 @@ export function ProfileForm() {
             body: JSON.stringify({
               name: data.name,
               email: data.email,
-              organizationType: data.organizationType,
+              orgType: data.orgType,
               mobile: data.mobile,
               bio: data.bio,
             }),
@@ -170,7 +170,7 @@ export function ProfileForm() {
         />
         <FormField
           control={form.control}
-          name="organizationType"
+          name="orgType"
           
           render={({ field }) => (
             <FormItem className="flex flex-col">
@@ -205,7 +205,7 @@ export function ProfileForm() {
                           value={orgType.value}
                           key={orgType.value}
                           onSelect={(value) => {
-                            form.setValue("organizationType", value)
+                            form.setValue("orgType", value)
                           }}
                         >
                           <Check
