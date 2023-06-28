@@ -51,7 +51,7 @@ export default function Work() {
       </div>
 
         <div className=" w-auto mt-24 mx-3 sm:mx-10">
-          <Card className="dark:bg-black border-zinc-800 rounded-3xl p-1 sm:p-3 w-full z-[6] relative my-4 mb-0 flex-1 sm:min-w-[477px]">
+          <Card className="dark:bg-black border-zinc-800 rounded-[38px] p-1 sm:p-3 w-full z-[6] relative my-4 mb-0 flex-1 sm:min-w-[477px]">
             <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-6">
 
               <Card className="dark:bg-black w-1/3 border-zinc-800 rounded-3xl h-fit min-h-[256px] p-3 z-[6] relative my-2 mb-0 flex-1 sm:min-w-[360px] ">
@@ -196,7 +196,7 @@ export default function Work() {
           </Card>    
 
           
-                      <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-full h-1/2 absolute bottom-0 left-0"> </div>
+           <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-5/6 h-1/2 absolute bottom-0 left-0"> </div>
  
  
           
