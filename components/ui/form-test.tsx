@@ -224,7 +224,7 @@ export function ProfileForm() {
                 </PopoverContent>
               </Popover>
               <FormDescription>
-              Try your best to choose the organization type that you feel is most accurate.
+              Please select the organization type that you believe is the most accurate.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -243,7 +243,7 @@ export function ProfileForm() {
                 />
               </FormControl>
               <FormDescription>
-              What do you do? What are you intrested for in a website? etc.
+              What do you do? What are you interested in for a website? etc.
               </FormDescription>
               <FormMessage />
             </FormItem>

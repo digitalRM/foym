@@ -114,7 +114,7 @@ export default function Home() {
 
                 <Card className="dark:bg-black border-zinc-800 rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
-                    <CardTitle className="">Even small actions lead to big impact.</CardTitle>
+                    <CardTitle className="">Small actions lead to big impact.</CardTitle>
                     <CardDescription className=" mt-3">Widespread change begins locally, driven by organizations like yours. Small actions cultivate over time, leading to progress. Our world isn't perfect, and it probably won't ever be, but we hold the power to leave it just a little better than we found it.</CardDescription>
                   </CardHeader>
                   <CardContent>
