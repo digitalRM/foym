@@ -46,7 +46,7 @@ export function ButtonWithIconJoin() {
 
         <Button variant="outline" className=" ml-2 border-zinc-800 hover:bg-zinc-900 bg-black " asChild>
           <div>
-            <Info className="mr-2 h-4 w-4" /> <Link href="/work">Learn More</Link>
+            <Info className="mr-2 h-4 w-4" /> <Link href="/work">About Us</Link>
           </div>
             
         </Button>

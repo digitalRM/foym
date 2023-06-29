@@ -58,14 +58,14 @@ export default function Home() {
 
       <div className="h-[100vh] w-screen bg-[url('./hero_join.webp')] bg-cover bg-bottom bg-no-repeat ">
 
-        <div className="flex justify-center align-center flex-col mt-72 max-w-[300px] sm:max-w-none mx-auto text-center">
-            <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter smMax:hidden">focus on your mission, not your website<span className="text-brandPink">.</span></h1>
-            <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter hidden smMax:block">focus on your mission, not your website.</h1>
+        <div className="flex justify-center align-center flex-col mt-[38vh] max-w-[300px] sm:max-w-none mx-auto text-center">
+            <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter smMax:hidden">change the world, one website at a time<span className="text-brandPink">.</span></h1>
+            <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter hidden smMax:block">change the world, one website at a time.</h1>
 
         </div>
 
-        <div className="flex max-w-md justify-center align-center lg:max-w-[900px] md:max-w-2xl sm:max-w-lg   text-center mx-auto">
-            <h2 className="font-sans text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h2>
+        <div className="flex max-w-md justify-center align-center lg:max-w-[899px] md:max-w-2xl sm:max-w-lg   text-center mx-auto">
+            <h2 className="font-sans text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with free custom-coded websites. We're looking for passionate volunteers like you to join! </h2>
         </div>
 
         <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-64">
@@ -75,29 +75,21 @@ export default function Home() {
 
       </div>
 
-      <div className="h-[100vh] w-screen bg-black">
-
-      </div>
-
-
-      
-
-
-      
-
-      
-
-        
+      <div className="h-fit overflow-hidden w-screen bg-black">
+        <div className="grid grid-cols-3 gap-4 max-w-[1000px] mx-auto my-8">
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square col-span-2"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl col-span-2 aspect-auto"></div>
 
 
-        
 
-  
-
-        
-
-                 
-      </div>
+        </div>
+      </div>       
+    </div>
 
       
 
