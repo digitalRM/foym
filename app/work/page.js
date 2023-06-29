@@ -80,7 +80,7 @@ export default function Work() {
 
                   <ul className="font-sans text-zinc-300">
                     <li>• Mukilteo Robotics has over 40+ members.</li>
-                    <li>• Mukilteo Robotics is completely free for all its members.</li>
+                    <li>• Mukilteo Robotics is completely free for all of its members.</li>
                     <li>• Mukilteo Robotics raised over $20,000 for their 2022 - 2023 season.</li>
 
                   </ul>
