@@ -1,5 +1,5 @@
 
-import { MainNewNav } from "@/components/ui/main-new-nav"
+import { MainNav } from "@/components/ui/main-nav"
 
 import Link from "next/link"
 
@@ -42,7 +42,7 @@ export default function Home() {
 
           <Link href={'/'} className="font-sans font-semibold hover:font-bold transition-all text-black dark:text-white text-lg">foym<span className="text-brandPink font-sans text-2xl" >.</span></Link>
         </div>
-          <MainNewNav className="mx-6 bg-transparent dark:bg-transparent" />
+          <MainNav className="mx-6 bg-transparent dark:bg-transparent" />
           
         </div>
       </div>
