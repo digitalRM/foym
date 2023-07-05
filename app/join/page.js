@@ -41,7 +41,7 @@ export default function Home() {
 
   
   return (
-    <div className="flex-col flex bg-white dark:bg-black w-screen overflow-x-hidden scroll-smooth">
+    <div className="flex-col flex bg-white dark:bg-black w-screen scroll-smooth">
       <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-10 smMax:backdrop-blur-xl">
         <div className="flex h-16 items-center px-4" >
 
@@ -77,19 +77,28 @@ export default function Home() {
 
       <div className="h-fit overflow-hidden w-screen bg-black">
         <div className="grid grid-cols-3 gap-4 max-w-[1000px] mx-auto my-8">
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square"></div>
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto"></div>
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto"></div>
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square col-span-2"></div>
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto"></div>
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square bg-[url('./earth.webp')] ">
+          <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className=" text-3xl font-semibold">help people,<br/> <span className="text-4xl font-bold">help people.</span></CardTitle>
+            
+          </CardHeader>
+          </div>
           <div className="bg-black border border-zinc-800 rounded-2xl col-span-2 aspect-auto"></div>
-
-
-
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-[1/1] col-span-2"></div>
+          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto " ></div>
         </div>
-      </div>       
+      </div>  
+
+      <div className="h-screen w-screen">
+        
+      </div>
+
+
+
+
     </div>
+
+    
 
       
 
