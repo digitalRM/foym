@@ -100,7 +100,7 @@ export default function Home() {
                   <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl">
                     <CardTitle className="">Join our newsletter. <Badge variant="outline" className=" -translate-y-0.5 ml-1 border-brandPink">Soon</Badge></CardTitle>
                     <CardDescription className=" mt-3 max-w-lg">No spam – we promise. </CardDescription>
-
+ 
                   </CardHeader>
 
                   <div className="flex w-full max-w-[95%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 smMax:pr-6 relative smMax:flex-wrap">
