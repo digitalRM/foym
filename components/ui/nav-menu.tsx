@@ -1,54 +1,16 @@
-'use client'
-
-import Link from "next/link"
-
-import { cn } from "@/lib/utils"
-
-import { MainNavContact } from "./main-nav-contact"
-
-import { Button } from "@/components/ui/button"
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { ProfileForm } from "./form-test"
-
-
 import React from 'react';
-
-
-
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { ChevronDown } from "lucide-react"
+import { CaretDownIcon } from '@radix-ui/react-icons';
 
-
-
-export function MainNewNav({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLElement>) {
-
+const NavigationMenuDemo = () => {
   return (
-
-
-    <nav
-      className={cn("flex items-center space-x-4 lg:space-x-6 bg-black", className)}
-      {...props}
-    >
-<NavigationMenu.Root className="relative z-[1] flex w-screen justify-center">
+    <NavigationMenu.Root className="relative z-[1] flex w-screen justify-center">
       <NavigationMenu.List className="center shadow-blackA7 m-0 flex list-none rounded-[6px] bg-white p-1 shadow-[0_2px_10px]">
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="text-zinc-950 hover:bg-violet3 focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
+          <NavigationMenu.Trigger className="text-violet11 hover:bg-violet3 focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
             Learn{' '}
-            <ChevronDown
-              className="text-zinc-800 relative top-[1px] transition-transform duration-75 ease-in group-data-[state=open]:-rotate-180"
+            <CaretDownIcon
+              className="text-violet10 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
               aria-hidden
             />
           </NavigationMenu.Trigger>
@@ -90,10 +52,10 @@ export function MainNewNav({
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="text-zinc-950 hover:bg-violet3 focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
+          <NavigationMenu.Trigger className="text-violet11 hover:bg-violet3 focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
             Overview{' '}
-            <ChevronDown
-              className="text-zinc-800 relative top-[1px] transition-transform duration-75 ease-in group-data-[state=open]:-rotate-180"
+            <CaretDownIcon
+              className="text-violet10 relative top-[1px] transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
               aria-hidden
             />
           </NavigationMenu.Trigger>
@@ -123,7 +85,7 @@ export function MainNewNav({
 
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className="text-zinc-950 hover:bg-violet3 focus:shadow-violet7 block select-none rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none no-underline outline-none focus:shadow-[0_0_0_2px]"
+            className="text-violet11 hover:bg-violet3 focus:shadow-violet7 block select-none rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none no-underline outline-none focus:shadow-[0_0_0_2px]"
             href="https://github.com/radix-ui"
           >
             Github
@@ -136,54 +98,28 @@ export function MainNewNav({
       </NavigationMenu.List>
 
       <div className="perspective-[2000px] absolute top-full left-0 flex w-full justify-center">
-        <NavigationMenu.Viewport className="data-[state=open]:animate-scaleIn data-[state=closed]:animate-scaleOut relative mt-[10px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[6px] bg-white transition-[width,_height] duration-75 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
+        <NavigationMenu.Viewport className="data-[state=open]:animate-scaleIn data-[state=closed]:animate-scaleOut relative mt-[10px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[6px] bg-white transition-[width,_height] duration-300 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
       </div>
     </NavigationMenu.Root>
+  );
+};
 
+const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
+  <li>
+    <NavigationMenu.Link asChild>
+      <a
+        className={classNames(
+          'focus:shadow-[0_0_0_2px] focus:shadow-violet7 hover:bg-mauve3 block select-none rounded-[6px] p-3 text-[15px] leading-none no-underline outline-none transition-colors',
+          className
+        )}
+        {...props}
+        ref={forwardedRef}
+      >
+        <div className="text-violet12 mb-[5px] font-medium leading-[1.2]">{title}</div>
+        <p className="text-mauve11 leading-[1.4]">{children}</p>
+      </a>
+    </NavigationMenu.Link>
+  </li>
+));
 
-      <Dialog>
-        <DialogTrigger className="text-sm font-medium text-neutral-400 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
-        Contact</DialogTrigger>
-      <DialogContent className="sm:max-w-[525px] bg-black border-zinc-800 min-w-[43%]">
-        <DialogHeader>
-          <DialogTitle>Contact Us</DialogTitle>
-          <DialogDescription>
-            We'll get back to you as soon as possible.
-          </DialogDescription>
-        </DialogHeader>
-          <ProfileForm />
-      </DialogContent>
-      </Dialog>
-
-
-      
-
-    </nav>
-  )
-}
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenu.Link asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenu.Link>
-    </li>
-  )
-})
-ListItem.displayName = "ListItem"
+export default NavigationMenuDemo;
