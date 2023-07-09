@@ -1,3 +1,4 @@
+
 import { UserNav } from "@/components/ui/user-nav"
 import { MainNav } from "@/components/ui/main-nav"
 
@@ -27,6 +28,7 @@ import { Badge } from "@/components/ui/badge"
 import { ProfileForm } from "@/components/ui/form-test"
 import { ScrollDown } from "@/components/ui/scroll-down"
 import { ButtonWithIconJoin } from "@/components/ui/button-join"
+
 
 
 
@@ -76,16 +78,18 @@ export default function Home() {
       </div>
 
       <div className="h-fit overflow-hidden w-screen bg-black">
-        <div className="grid grid-cols-3 gap-4 max-w-[1000px] mx-auto my-8">
-          <div className="bg-zinc-950 border border-zinc-800 rounded-2xl aspect-square  ">
+        <div className="grid lg:grid-cols-3 grid-cols-1 row-span-2 lg:gap-4 max-w-[1000px] lg:px-8 lg:mx-auto m-8 my-8">
+          <div className="bg-black lg:my-0 mb-4 border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
+          
           <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className=" text-3xl font-semibold">help people,<br/> <span className="text-4xl font-bold">help people.</span></CardTitle>
+            <CardTitle className=" text-[2rem] leading-10 font-semibold">help people,<br/> <span className="text-4xl font-bold">help people.</span></CardTitle>
+            
             
           </CardHeader>
           </div>
-          <div className="bg-zinc-950  border border-zinc-800 rounded-2xl col-span-2 aspect-auto"></div>
-          <div className="bg-zinc-950  border border-zinc-800 rounded-2xl aspect-[1/1] col-span-2"></div>
-          <div className="bg-zinc-950  border border-zinc-800 rounded-2xl aspect-auto " ></div>
+          <div className="bg-black lg:my-0 mb-4  border border-zinc-800 rounded-2xl lg:aspect-[inherit] aspect-[2/1] col-span-2 "></div>
+          <div className="bg-black lg:my-0 mb-4   border border-zinc-800 rounded-2xl lg:aspect-[inherit] aspect-[2/1] col-span-2"></div>
+          <div className="bg-black lg:my-0 mb-4   border border-zinc-800 rounded-2xl aspect-[1/1]" ></div>
         </div>
       </div>  
 
