@@ -56,7 +56,7 @@ export default function Home() {
 
 
 
-      <div className="h-[100vh] w-screen bg-[url('./hero_join.webp')] bg-cover bg-bottom bg-no-repeat ">
+      <div className="h-[100vh] w-screen bg-[url('./join-wave.svg')] bg-cover  bg-bottom bg-no-repeat ">
 
         <div className="flex justify-center align-center flex-col mt-[38vh] max-w-[300px] sm:max-w-none mx-auto text-center">
             <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter smMax:hidden">change the world, one website at a time<span className="text-brandPink">.</span></h1>
@@ -77,15 +77,15 @@ export default function Home() {
 
       <div className="h-fit overflow-hidden w-screen bg-black">
         <div className="grid grid-cols-3 gap-4 max-w-[1000px] mx-auto my-8">
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-square bg-[url('./earth.webp')] ">
-          <CardHeader className="bg-black bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+          <div className="bg-zinc-950 border border-zinc-800 rounded-2xl aspect-square  ">
+          <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className=" text-3xl font-semibold">help people,<br/> <span className="text-4xl font-bold">help people.</span></CardTitle>
             
           </CardHeader>
           </div>
-          <div className="bg-black border border-zinc-800 rounded-2xl col-span-2 aspect-auto"></div>
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-[1/1] col-span-2"></div>
-          <div className="bg-black border border-zinc-800 rounded-2xl aspect-auto " ></div>
+          <div className="bg-zinc-950  border border-zinc-800 rounded-2xl col-span-2 aspect-auto"></div>
+          <div className="bg-zinc-950  border border-zinc-800 rounded-2xl aspect-[1/1] col-span-2"></div>
+          <div className="bg-zinc-950  border border-zinc-800 rounded-2xl aspect-auto " ></div>
         </div>
       </div>  
 
