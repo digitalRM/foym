@@ -88,16 +88,16 @@ export default function Home() {
             <Card className="w-full rounded-[50px] smMax:rounded-[40px] p-12 h-full border-[0] dark:bg-black flex flex-wrap smMax:p-3">
 
               <div className=" w-full cardsBreak:w-fit">
-                <Card className="dark:bg-zinc-950  border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
-                  <CardHeader className="dark:bg-zinc-950  border-zinc-200 rounded-3xl">
+                <Card className="dark:bg-black  border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-fit my-4 mt-1 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
+                  <CardHeader className="dark:bg-black  border-zinc-200 rounded-3xl">
                     <CardTitle className="">Creating a positive impact shouldn't be a challenge.</CardTitle>
                     <CardDescription className=" mt-3 max-w-lg">That's why we firmly believe that your valuable time is best spent pursuing your mission, rather than being wasted on website development. Break boundaries, change lives, and do what you do best – don’t worry about the rest.</CardDescription>
 
                   </CardHeader>
                 </Card>
 
-                <Card className="dark:bg-zinc-950  border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-[586px] z-[6] relative my-4 mb-0 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
-                  <CardHeader className="dark:bg-zinc-950  border-zinc-200 rounded-3xl">
+                <Card className="dark:bg-black  border-zinc-800 rounded-3xl p-3 w-full cardsBreak:w-[586px] z-[6] relative my-4 mb-0 cardsBreak:m-4 flex-1 sm:min-w-[477px]">
+                  <CardHeader className="dark:bg-black  border-zinc-200 rounded-3xl">
                     <CardTitle className="">Join our newsletter. <Badge variant="outline" className=" -translate-y-0.5 ml-1 border-brandPink">Soon</Badge></CardTitle>
                     <CardDescription className=" mt-3 max-w-lg">No spam – we promise. </CardDescription>
  
@@ -112,8 +112,8 @@ export default function Home() {
              
               </div>
 
-                <Card className="dark:bg-zinc-950  border-zinc-800 rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
-                  <CardHeader className="dark:bg-zinc-950  border-zinc-200 rounded-3xl">
+                <Card className="dark:bg-black  border-zinc-800 rounded-3xl p-3 w-fit z-[6] relative my-4 cardsBreak:m-4 cardsBreak:ml-0 flex-1 min-w-[50%] h-[376px] smMax:h-fit">
+                  <CardHeader className="dark:bg-black  border-zinc-200 rounded-3xl">
                     <CardTitle className="">Small actions lead to big impact.</CardTitle>
                     <CardDescription className=" mt-3">Widespread change begins locally, driven by organizations like yours. Small actions cultivate over time, leading to progress. Our world isn't perfect, and it probably won't ever be, but we hold the power to leave it just a little better than we found it.</CardDescription>
                   </CardHeader>

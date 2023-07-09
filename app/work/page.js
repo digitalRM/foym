@@ -54,8 +54,8 @@ export default function Work() {
           <Card className="dark:bg-black border-zinc-800 rounded-[38px] p-1 sm:p-3 w-full z-[6] relative my-4 mb-0 flex-1 sm:min-w-[477px]">
             <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-6">
 
-              <Card className="dark:bg-zinc-950  w-1/3 border-zinc-800 rounded-3xl h-fit min-h-[256px] p-3 z-[6] relative my-2 mb-0 flex-1 sm:min-w-[360px] ">
-                <CardHeader className="dark:bg-zinc-950  border-zinc-200 rounded-3xl">
+              <Card className="dark:bg-black  w-1/3 border-zinc-800 rounded-3xl h-fit min-h-[256px] p-3 z-[6] relative my-2 mb-0 flex-1 sm:min-w-[360px] ">
+                <CardHeader className="dark:bg-black  border-zinc-200 rounded-3xl">
                   <CardTitle className="font-sans text-2xl font-bold">Mukilteo Robotics.</CardTitle>
                   <CardDescription></CardDescription>
                   <Separator className="bg-zinc-800" />
@@ -73,8 +73,8 @@ export default function Work() {
 
               </Card>
 
-              <Card className="dark:bg-zinc-950  w-1/3 border-zinc-800 rounded-3xl p-3 z-[6] relative my-4 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
-                <CardHeader className="dark:bg-zinc-950  border-zinc-200 rounded-3xl">
+              <Card className="dark:bg-black  w-1/3 border-zinc-800 rounded-3xl p-3 z-[6] relative my-4 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
+                <CardHeader className="dark:bg-black  border-zinc-200 rounded-3xl">
                   <CardTitle className="font-sans">Quick Information. <Badge variant="outline" className=" -translate-y-0.5 ml-1 border-brandPink font-sans">New</Badge></CardTitle>
                   <CardDescription className=" mt-3 max-w-3xl font-sans">Based in Mukilteo, Washington. </CardDescription>
 
@@ -97,8 +97,8 @@ export default function Work() {
             </CardHeader>
             
             <div className="sm:mx-6 mx-3">
-              <Card className="dark:bg-zinc-950  w-full border-zinc-800 rounded-3xl p-3 z-[6] relative my-4 mt-0 flex-1 ">
-                <CardHeader className="dark:bg-zinc-950  border-zinc-200 rounded-3xl flex flex-row gap-6 flex-wrap sm:p-6 p-2">
+              <Card className="dark:bg-black  w-full border-zinc-800 rounded-3xl p-3 z-[6] relative my-4 mt-0 flex-1 ">
+                <CardHeader className="dark:bg-black  border-zinc-200 rounded-3xl flex flex-row gap-6 flex-wrap sm:p-6 p-2">
 
                 <div className="group">
                   {/* <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge> */}
