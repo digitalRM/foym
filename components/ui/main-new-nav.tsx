@@ -1,12 +1,20 @@
-'use client'
+"use client"
 
+import * as React from "react"
 import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
-import { MainNavContact } from "./main-nav-contact"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
 
-import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
@@ -16,149 +24,110 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+
 import { ProfileForm } from "./form-test"
 
 
-import React from 'react';
+const components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Alert Dialog",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Hover Card",
+    href: "/docs/primitives/hover-card",
+    description:
+      "For sighted users to preview content available behind a link.",
+  },
+  {
+    title: "Progress",
+    href: "/docs/primitives/progress",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Scroll-area",
+    href: "/docs/primitives/scroll-area",
+    description: "Visually or semantically separates content.",
+  },
+  {
+    title: "Tabs",
+    href: "/docs/primitives/tabs",
+    description:
+      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+  },
+  {
+    title: "Tooltip",
+    href: "/docs/primitives/tooltip",
+    description:
+      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+  },
+]
 
-
-
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { ChevronDown } from "lucide-react"
-
-
-
-export function MainNewNav({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLElement>) {
-
+export function MainNewNav() {
   return (
-
-
-    <nav
-      className={cn("flex items-center space-x-4 lg:space-x-6 bg-black", className)}
-      {...props}
-    >
-<NavigationMenu.Root className="relative z-[1] flex w-screen justify-center">
-      <NavigationMenu.List className="center shadow-blackA7 m-0 flex list-none rounded-[6px] bg-white p-1 shadow-[0_2px_10px]">
-        <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="text-zinc-950 hover:bg-violet3 focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
-            Learn{' '}
-            <ChevronDown
-              className="text-zinc-800 relative top-[1px] transition-transform duration-75 ease-in group-data-[state=open]:-rotate-180"
-              aria-hidden
-            />
-          </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight absolute top-0 left-0 w-full sm:w-auto">
-            <ul className="one m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[500px] sm:grid-cols-[0.75fr_1fr]">
-              <li className="row-span-3 grid">
-                <NavigationMenu.Link asChild>
+    <NavigationMenu className="mt-1.5">
+      <NavigationMenuList>
+      <NavigationMenuItem>
+          <Link href="/" className="bg-transparent" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Home
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="bg-transparent">About Us</NavigationMenuTrigger>
+          <NavigationMenuContent className="mr-8">
+            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <li className="row-span-3">
+                <NavigationMenuLink asChild>
                   <a
-                    className="focus:shadow-violet7 from-purple9 to-indigo9 flex
-                    h-full w-full select-none flex-col justify-end rounded-[6px] bg-gradient-to-b p-[25px] no-underline outline-none focus:shadow-[0_0_0_2px]"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-br from-brandPink/10 to-brandPinkStep1/10 p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <svg aria-hidden width="38" height="38" viewBox="0 0 25 25" fill="white">
-                      <path d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"></path>
-                      <path d="M12 0H4V8H12V0Z"></path>
-                      <path d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"></path>
-                    </svg>
-                    <div className="mt-4 mb-[7px] text-[18px] font-medium leading-[1.2] text-white">
-                      Radix Primitives
+                    
+                    <div className="mb-2 mt-4 text-lg font-medium">
+                      foym<span className=" text-brandPink">.</span>
                     </div>
-                    <p className="text-mauve4 text-[14px] leading-[1.3]">
-                      Unstyled, accessible components for React.
+                    <p className="text-sm leading-tight text-muted-foreground">
+                      Break boundaries, change lives, and do what you do best – don’t worry about the rest.
                     </p>
                   </a>
-                </NavigationMenu.Link>
+                </NavigationMenuLink>
               </li>
-
-              <ListItem href="https://stitches.dev/" title="Stitches">
-                CSS-in-JS with best-in-class developer experience.
+              <ListItem href="/about-us" title="Our Mission">
+                Learn more about our expanding team and our mission.
               </ListItem>
-              <ListItem href="/colors" title="Colors">
-                Beautiful, thought-out palettes with auto dark mode.
+              <ListItem href="/work" title="Our Work">
+                
+                View some the past projects we've worked on.
               </ListItem>
-              <ListItem href="https://icons.radix-ui.com/" title="Icons">
-                A crisp set of 15x15 icons, balanced and consistent.
-              </ListItem>
-            </ul>
-          </NavigationMenu.Content>
-        </NavigationMenu.Item>
-
-        <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="text-zinc-950 hover:bg-violet3 focus:shadow-violet7 group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none outline-none focus:shadow-[0_0_0_2px]">
-            Overview{' '}
-            <ChevronDown
-              className="text-zinc-800 relative top-[1px] transition-transform duration-75 ease-in group-data-[state=open]:-rotate-180"
-              aria-hidden
-            />
-          </NavigationMenu.Trigger>
-          <NavigationMenu.Content className="absolute top-0 left-0 w-full sm:w-auto">
-            <ul className="m-0 grid list-none gap-x-[10px] p-[22px] sm:w-[600px] sm:grid-flow-col sm:grid-rows-3">
-              <ListItem title="Introduction" href="/docs/primitives/overview/introduction">
-                Build high-quality, accessible design systems and web apps.
-              </ListItem>
-              <ListItem title="Getting started" href="/docs/primitives/overview/getting-started">
-                A quick tutorial to get you up and running with Radix Primitives.
-              </ListItem>
-              <ListItem title="Styling" href="/docs/primitives/guides/styling">
-                Unstyled and compatible with any styling solution.
-              </ListItem>
-              <ListItem title="Animation" href="/docs/primitives/guides/animation">
-                Use CSS keyframes or any animation library of your choice.
-              </ListItem>
-              <ListItem title="Accessibility" href="/docs/primitives/overview/accessibility">
-                Tested in a range of browsers and assistive technologies.
-              </ListItem>
-              <ListItem title="Releases" href="/docs/primitives/overview/releases">
-                Radix Primitives releases and their changelogs.
+              <ListItem href="/join" title="Join Us">
+                We're always looking for amazing volunteers to join our team!
               </ListItem>
             </ul>
-          </NavigationMenu.Content>
-        </NavigationMenu.Item>
-
-        <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className="text-zinc-950 hover:bg-violet3 focus:shadow-violet7 block select-none rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none no-underline outline-none focus:shadow-[0_0_0_2px]"
-            href="https://github.com/radix-ui"
-          >
-            Github
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
-
-        <NavigationMenu.Indicator className="data-[state=visible]:animate-fadeIn data-[state=hidden]:animate-fadeOut top-full z-[1] flex h-[10px] items-end justify-center overflow-hidden transition-[width,transform_250ms_ease]">
-          <div className="relative top-[70%] h-[10px] w-[10px] rotate-[45deg] rounded-tl-[2px] bg-white" />
-        </NavigationMenu.Indicator>
-      </NavigationMenu.List>
-
-      <div className="perspective-[2000px] absolute top-full left-0 flex w-full justify-center">
-        <NavigationMenu.Viewport className="data-[state=open]:animate-scaleIn data-[state=closed]:animate-scaleOut relative mt-[10px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[6px] bg-white transition-[width,_height] duration-75 sm:w-[var(--radix-navigation-menu-viewport-width)]" />
-      </div>
-    </NavigationMenu.Root>
-
-
-      <Dialog>
-        <DialogTrigger className="text-sm font-medium text-neutral-400 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
-        Contact</DialogTrigger>
-      <DialogContent className="sm:max-w-[525px] bg-black border-zinc-800 min-w-[43%]">
-        <DialogHeader>
-          <DialogTitle>Contact Us</DialogTitle>
-          <DialogDescription>
-            We'll get back to you as soon as possible.
-          </DialogDescription>
-        </DialogHeader>
-          <ProfileForm />
-      </DialogContent>
-      </Dialog>
-
-
-      
-
-    </nav>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Dialog>
+              <DialogTrigger className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 bg-transparent">
+              Contact
+              </DialogTrigger>
+            <DialogContent className="sm:max-w-[525px] bg-black border-zinc-800 min-w-[43%]">
+              <DialogHeader>
+                <DialogTitle>Contact Us</DialogTitle>
+                <DialogDescription>
+                  We'll get back to you as soon as possible.
+                </DialogDescription>
+              </DialogHeader>
+                <ProfileForm />
+            </DialogContent>
+          </Dialog>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
   )
 }
 
@@ -168,7 +137,7 @@ const ListItem = React.forwardRef<
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
-      <NavigationMenu.Link asChild>
+      <NavigationMenuLink asChild>
         <a
           ref={ref}
           className={cn(
@@ -182,7 +151,7 @@ const ListItem = React.forwardRef<
             {children}
           </p>
         </a>
-      </NavigationMenu.Link>
+      </NavigationMenuLink>
     </li>
   )
 })
