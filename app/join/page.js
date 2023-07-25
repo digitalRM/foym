@@ -79,7 +79,7 @@ export default function Home() {
 
       </div>
 
-      <div className="h-fit overflow-hidden w-screen bg-black">
+      {/* <div className="h-fit overflow-hidden w-screen bg-black">
         <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 row-span-2 sm:gap-4 lg:gap-4 max-w-[1000px] lg:px-8 lg:mx-auto m-8 my-8">
           <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
             <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
@@ -122,7 +122,7 @@ export default function Home() {
 
       <div className="h-screen w-screen">
         
-      </div>
+      </div> */}
 
 
 
