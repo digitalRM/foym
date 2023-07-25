@@ -1,5 +1,5 @@
 import { UserNav } from "@/components/ui/user-nav"
-import { MainNav } from "@/components/ui/main-nav"
+import { MainNewNav } from "@/components/ui/main-new-nav"
 
 import Link from "next/link"
 import { ButtonWithIcon } from "@/components/ui/button-home-contact"
@@ -44,11 +44,13 @@ export default function Home() {
       <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-10 smMax:backdrop-blur-xl">
         <div className="flex h-16 items-center px-4" >
 
-        <div className="mr-auto ml-6 flex items-center space-x-4 ">
+        <div className="mr-auto ml-3 flex items-center space-x-4 ">
 
           <Link href={'/'} className="font-sans font-semibold hover:font-bold transition-all text-black dark:text-white text-lg">foym<span className="text-brandPink font-sans text-2xl" >.</span></Link>
+        
+          
         </div>
-          <MainNav className="mx-6 bg-transparent dark:bg-transparent" />
+          <MainNewNav className="mx-6 bg-opacity-50 bg-black bg-blur-xl" />
           
         </div>
       </div>

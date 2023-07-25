@@ -1,6 +1,6 @@
 
 import { UserNav } from "@/components/ui/user-nav"
-import { MainNav } from "@/components/ui/main-nav"
+import { MainNewNav } from "@/components/ui/main-new-nav"
 
 import Link from "next/link"
 import { ButtonWithIcon } from "@/components/ui/button-home-contact"
@@ -47,11 +47,13 @@ export default function Home() {
       <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-10 smMax:backdrop-blur-xl">
         <div className="flex h-16 items-center px-4" >
 
-        <div className="mr-auto ml-6 flex items-center space-x-4 ">
+        <div className="mr-auto ml-3 flex items-center space-x-4 ">
 
           <Link href={'/'} className="font-sans font-semibold hover:font-bold transition-all text-black dark:text-white text-lg">foym<span className="text-brandPink font-sans text-2xl" >.</span></Link>
+        
+          
         </div>
-          <MainNav className="mx-6 bg-opacity-50 bg-black bg-blur-xl" />
+          <MainNewNav className="mx-6 bg-opacity-50 bg-black bg-blur-xl" />
           
         </div>
       </div>
@@ -77,19 +79,50 @@ export default function Home() {
 
       </div>
 
-      {/* <div className="h-fit overflow-hidden w-screen bg-black">
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 grid-rows-2 gap-4 mx-auto max-w-[1100px]">
-            <Card className="col-span-2 ">1</Card>
-            <Card className="col-start-3 aspect-square">2</Card>
-            <Card className="row-start-2">3</Card>
-            <Card className="col-span-2 row-start-2">4</Card>
+      <div className="h-fit overflow-hidden w-screen bg-black">
+        <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 row-span-2 sm:gap-4 lg:gap-4 max-w-[1000px] lg:px-8 lg:mx-auto m-8 my-8">
+          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
+            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+               <CardTitle className=" text-[2rem] leading-8 font-bold">help people,<br/>help others.</CardTitle>
+            </CardHeader>
+          </div>
+
+          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
+            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className=" text-[1.8rem] leading-8 font-bold">work with real<br/>communities.</CardTitle>
+            </CardHeader>
+          </div>
+
+          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
+            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
+            </CardHeader>
+          </div>
+
+          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
+            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
+            </CardHeader>
+          </div>  
+
+          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
+            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
+            </CardHeader>
+          </div>
+
+          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
+            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
+            </CardHeader>
+          </div>        
         </div>
 
       </div>  
 
       <div className="h-screen w-screen">
         
-      </div> */}
+      </div>
 
 
 
