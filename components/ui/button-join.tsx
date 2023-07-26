@@ -22,34 +22,21 @@ import { UserPlus } from "lucide-react"
 export function ButtonWithIconJoin() {
   return (
     <>
-    
-    <Dialog>
-        <DialogTrigger className="text-sm font-medium text-neutral-500 text-muted-foreground transition-colors hover:text-primary font-sans flex place-items-center">
+      <a href="mailto:ruslan@foym.org" >
         <div className=" mr-2 bg-primary text-primary-foreground hover:bg-primary/90 h-10 py-2 px-4 inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background" >
             <UserPlus className="mr-2 h-4 w-4" /> Join Our Cause
         </div>
-        </DialogTrigger>
-      <DialogContent className="sm:max-w-[525px] bg-black border-zinc-800 min-w-[43%]">
-        <DialogHeader>
-          <DialogTitle>Contact Us</DialogTitle>
-          <DialogDescription>
-            We'll get back to you as soon as possible.
-          </DialogDescription>
-        </DialogHeader>
-          <ProfileForm />
-      </DialogContent>
-      </Dialog>
-
+      </a>
 
       
         
-
+      <Link href="/work">
         <Button variant="outline" className=" ml-2 border-zinc-800 hover:bg-zinc-900 bg-black " asChild>
           <div>
-            <Info className="mr-2 h-4 w-4" /> <Link href="/work">Learn About Us</Link>
+            <Info className="mr-2 h-4 w-4" /> Learn About Us
           </div>
-            
         </Button>
+      </Link>
     </>
   )
 }
