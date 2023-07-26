@@ -55,7 +55,7 @@ export default function Home() {
 
 
 
-      <div className="h-[200vh] w-screen my-[10px] sm:my-[148px] bg-[url('./hero_2x.webp')] bg-cover bg-center bg-no-repeat ">
+      <div className="h-[200vh] w-screen my-[10px] sm:my-[148px] bg-[url('./hero.webp')] bg-cover bg-center bg-no-repeat ">
         <div className="flex justify-center align-center flex-col mt-52 max-w-[300px] sm:max-w-none mx-auto text-center">
           <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter smMax:hidden">focus on your mission, not your website<span className="text-brandPink">.</span></h1>
           <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter hidden smMax:block">focus on your mission, not your website.</h1>
