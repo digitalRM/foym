@@ -156,7 +156,6 @@ export default function Home() {
 
             </div>
           </div>
-
           
 <footer className="bg-white sm:mt-[16rem] smMax:mt-[600px] 2xl:mt-1 dark:bg-black mt-0 ">
     <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
