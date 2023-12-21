@@ -28,6 +28,8 @@ import { Badge } from "@/components/ui/badge"
 import { ProfileForm } from "@/components/ui/form-test"
 import { ScrollDown } from "@/components/ui/scroll-down"
 import { ButtonWithIconJoin } from "@/components/ui/button-join"
+import NewHead from "@/components/ui/header"
+import ComponentThree from "@/components/ui/componentThree"
 
 
 
@@ -43,90 +45,34 @@ export default function Home() {
 
   
   return (
-    <div className="flex-col flex bg-white dark:bg-black w-screen scroll-smooth">
-      <div className="border-b border-zinc-800 w-screen fixed backdrop-blur-sm z-10 smMax:backdrop-blur-xl">
-        <div className="flex h-16 items-center px-4" >
+    <div className="flex-col flex bg-white dark:bg-black w-screen overflow-x-hidden scroll-smooth ">
+      <NewHead />
 
-        <div className="mr-auto ml-3 flex items-center space-x-4 ">
 
-          <Link href={'/'} className="font-sans font-semibold hover:font-bold transition-all text-black dark:text-white text-lg">foym<span className="text-brandPink font-sans text-2xl" >.</span></Link>
-        
-          
+
+      
+      <div className="h-screen w-screen my-[10px] sm:my-[148px] bg-[url('./join-wave.svg')] bg-cover bg-bottom bg-no-repeat sm:p-0 p-8">
+        <div className="flex justify-center align-center flex-col mt-52 max-w-full sm:max-w-none mx-auto text-center">
+          <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter smMax:hidden">help the world, one website at a time<span className="text-brandPink">.</span></h1>
+
         </div>
-          <MainNewNav className="mx-6 bg-opacity-50 bg-black bg-blur-xl" />
-          
-        </div>
+
+      <div className="flex justify-center align-center lg:max-w-[900px] md:max-w-[46rem] max-w-full  text-center mx-auto sm:max-w-[33rem]">
+        <h2 className="font-sans text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight md:mt-6 sm:mt-4 mt-2 sm:mx-8 text-left sm:text-center">Our mission is to empower non-profit organizations & small businesses by providing them with websites that communicate their vision and help amplify their impact – and we do it for free. </h2>
       </div>
 
-
-
-      <div className="h-[100vh] w-screen bg-[url('./join-wave.svg')] bg-cover  bg-bottom bg-no-repeat ">
-
-        <div className="flex justify-center align-center flex-col mt-[38vh] max-w-[300px] sm:max-w-none mx-auto text-center">
-            <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter smMax:hidden">change the world, one website at a time<span className="text-brandPink">.</span></h1>
-            <h1 className="font-sans text-3xl text-black dark:text-white lg:text-5xl md:text-3xl sm:text-3xl font-bold flex justify-center align-center tracking-tighter hidden smMax:block">change the world, one website at a time.</h1>
-
-        </div>
-
-        <div className="flex max-w-md justify-center align-center lg:max-w-[899px] md:max-w-2xl sm:max-w-lg   text-center mx-auto">
-            <h2 className="font-sans text-zinc-400 lg:text-xl font-light flex justify-center align-center tracking-tight mt-6 mx-8">Our mission is to empower non-profit organizations & small businesses by providing them with free custom-coded websites. We're looking for passionate volunteers like you to join! </h2>
-        </div>
-
-        <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-64">
-            <ButtonWithIconJoin />
-        </div>
-        
-
+      <div className="flex justify-center align-center max-w-4xl text-center mx-auto mt-6 mb-64 flex-col sm:flex-row gap-4 sm:gap-0">
+        <ButtonWithIcon />
+      </div>
       </div>
 
-      {/* <div className="h-fit overflow-hidden w-screen bg-black">
-        <div className="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 row-span-2 sm:gap-4 lg:gap-4 max-w-[1000px] lg:px-8 lg:mx-auto m-8 my-8">
-          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
-            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-               <CardTitle className=" text-[2rem] leading-8 font-bold">help people,<br/>help others.</CardTitle>
-            </CardHeader>
+      <div className="w-screen overflow-hidden h-screen border border-zinc-800 translate-y-8 md:translate-y-0 border-x-0 border-b-0 border-t-0 flex justify-evenly p-6 px-0 lg:p-12 md:px-6 sm:px-0 lg:flex-nowrap md:flex-wrap bg-white dark:bg-black relative ">
+        <div className="w-full m-2 overflow-hidden rounded-[50px] border-zinc-800 mx-2 p-[2px] relative h-fit max-w-[1440px]">
+          <div className="overflow-hidden rounded-[30px] bg-gradient-to-b from-transparent from-12% via-brandPink  to-black to-88% backdrop-blur-xl  z-[2] relative p-[1px]">
+            <ComponentThree />
           </div>
-
-          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
-            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className=" text-[1.8rem] leading-8 font-bold">work with real<br/>communities.</CardTitle>
-            </CardHeader>
-          </div>
-
-          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
-            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
-            </CardHeader>
-          </div>
-
-          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
-            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
-            </CardHeader>
-          </div>  
-
-          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
-            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
-            </CardHeader>
-          </div>
-
-          <div className="bg-black  border border-zinc-800 rounded-2xl aspect-[1/1] lg:w-auto  bg-[linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('./bento-1.svg')] bg-cover bg-right">
-            <CardHeader className="bg-zinc-900 bg-opacity-0 border-zinc-200 rounded-3xl flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className=" text-[2rem] leading-8 font-bold">work with<br/>real groups.</CardTitle>
-            </CardHeader>
-          </div>        
         </div>
-
-      </div>  
-
-      <div className="h-screen w-screen">
-        
-      </div> */}
-
-
-
-
+      </div>
     </div>
 
     

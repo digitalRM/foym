@@ -1,6 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.question {  
+  color: white;
+  position: relative;
+}
+.question:before {
+  content: ".";
+  margin-top: -0.8px;
+  font-size: 38px;
+  position: absolute; 
+  color: #E724C8;
+  margin-left:3.6px;
+}
  
 @layer base {
   :root {
@@ -69,7 +82,45 @@
     --ring: 240 3.7% 15.9%;
   }
 }
- 
+
+.bg-fade-in::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./hero2x.webp') center/cover no-repeat;
+  z-index: -1;
+  animation: fadeIn 0.7s ease-in-out;
+
+}
+/* This targets the scrollbar itself */
+.scroll-thin::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+  height: 8px; /* Adjust for horizontal scrollbars if needed */
+}
+
+/* This targets the scrollbar track (the part the thumb moves along) */
+.scroll-thin::-webkit-scrollbar-track {
+  background: #121212; /* Tailwind neutral-600 for track */
+}
+
+/* This targets the draggable scrolling handle */
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #353535; /* Tailwind neutral-700 for handle */
+  border-radius: 6px; /* Rounded corners on the handle */
+}
+
+/* This changes the handle color when hovered or active */
+.scroll-thin::-webkit-scrollbar-thumb:hover {
+  background: #464646; /* Tailwind neutral-800 for hover */
+}
+
+
+.fadeIn {
+  animation: fadeIn 0.7s ease-in-out;
+}
 @layer base {
   * {
     @apply border-border;
