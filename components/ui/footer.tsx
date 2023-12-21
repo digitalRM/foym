@@ -105,7 +105,7 @@ const navigation = {
               ))}
             </div>
             <p className="mt-8 text-xs leading-5 text-neutral-400 md:order-1 md:mt-0">
-              &copy; 2023 <a href="/" className="hover:underline">foym.</a> All Rights Reserved.
+              &copy; 2024 <a href="/" className="hover:underline">foym.</a> All Rights Reserved.
             </p>
             <p className="mt-8 text-xs leading-5 text-neutral-400 md:order-1 md:mt-0">
               A Project By <a href="https://www.linkedin.com/in/ruslan-muk/" className="hover:underline">Ruslan Mukhamedvaleev.</a>
