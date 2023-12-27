@@ -7,14 +7,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   metadataBase: new URL('https://www.foym.org/'),
-  title: 'Focus On Your Mission.',
+  title: 'foym - Focus On Your Mission.',
   themeColor: '#000000',
   description: 'Focus on your mission, not your website. Our mission is to empower non-profit organizations & small businesses by providing them with websites, for completely free.',
   openGraph: {
-    title: 'Focus On Your Mission.',
+    title: 'foym - Focus On Your Mission.',
     description: 'Focus on your mission, not your website. Our mission is to empower non-profit organizations & small businesses by providing them with websites, for completely free.',
     url: 'https://www.foym.org/',
-    siteName: 'Focus On Your Mission.',
+    siteName: 'foym - Focus On Your Mission.',
     images: [
       {
         url: '/openGraph.png',
