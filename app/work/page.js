@@ -65,7 +65,7 @@ export default function Work() {
               <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-12 lg:pr-0 sm:pb-0">
                 <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
                   <CardHeader className="dark:bg-black rounded-3xl">
-                    <CardTitle className="tracking-tight text-2xl">Mukilteo Robotics</CardTitle>
+                    <CardTitle className="tracking-tight text-base md:text-2xl">Mukilteo Robotics</CardTitle>
                     <CardDescription className=" mt-3 ">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM. </CardDescription>
                   </CardHeader>
                   <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
@@ -95,13 +95,13 @@ export default function Work() {
                 
 
               </CardHeader>
-              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-12 lg:pl-0 sm:pb-2">
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-12 lg:pl-0 sm:pb-0">
                 <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
                   <CardHeader className="dark:bg-black rounded-3xl">
-                    <CardTitle className="tracking-tight text-2xl">Washington Youth Alliance</CardTitle>
-                    <CardDescription className=" mt-3 " >The Washington Youth Alliance is a student-led advocacy organization that empowers young people to engage in the political process while also advocating for their rights as young citizens of their state. Their organization is also dedicated to empowering youth across Washington State by fostering essential life skills, promoting digital literacy, and preparing young people for their educational and career futures.</CardDescription>
+                    <CardTitle className="tracking-tight text-base md:text-2xl">Washington Youth Alliance</CardTitle>
+                    <CardDescription className=" mt-3" >The Washington Youth Alliance is a student-led advocacy organization that empowers young people to engage in the political process while also advocating for their rights as young citizens of their state. Their organization is also dedicated to empowering youth across Washington State by fostering essential life skills, promoting digital literacy, and preparing young people for their educational and career futures.</CardDescription>
                   </CardHeader>
-                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-6 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 md:mt-5 pt-0 pl-1 mb-2  relative smMax:flex-wrap ">
                     <ButtonWithIconWork link="https://washingtonyouthalliance.org" />
                   </div>  
 
@@ -131,10 +131,10 @@ export default function Work() {
               <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pr-0 sm:pt-0 ">
                 <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
                   <CardHeader className="dark:bg-black rounded-3xl">
-                    <CardTitle className="tracking-tight text-2xl">The Portfolio - An FOYM<span className="text-brandPink lg:text-4xl">.</span> Template</CardTitle>
+                    <CardTitle className="tracking-tight text-base md:text-2xl">The Portfolio - An FOYM<span className="text-brandPink lg:text-4xl">.</span> Template</CardTitle>
                     <CardDescription className=" mt-3 " >This is the first template we have created for our clients—the first of many to come. It is a simple, clean, modern website modeled after a resume, perfect for showcasing your work. It is fully responsive and works on all devices. It is also fully customizable and easy to use. You can use it to create a portfolio that showcases your work to potential clients and employers. </CardDescription>
                   </CardHeader>
-                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-6 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 sm:mt-6 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
                     <ButtonWithIconWork link="https://portfolio.foym.org" />
                     <ButtonWithIconWork link="https://github.com/digitalRM/FOYM-Portfolio" color="code" />
                   </div>  
