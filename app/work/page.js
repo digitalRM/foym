@@ -19,7 +19,8 @@ import { ButtonWithIconWork }from "@/components/ui/button-work-link"
 
 import Image from "next/image"
 
-import mrImage from "../mukPhoto.jpeg"
+import mrImage from "@/public/muk.jpeg"
+import waImage from "@/public/wa.jpeg"
 
 import { Separator } from "@/components/ui/separator"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -59,31 +60,18 @@ export default function Work() {
             <div className="absolute -inset-2 rounded-[50px] bg-gradient-to-r from-brandBlue to-brandPink opacity-40 blur-xl h-1/3 sm:h-4/5"/>
 
             <Card className="dark:bg-blackmax-w-[1440px] bg-black rounded-[50px] p-1 w-full z-[6] relative mb-0 flex-1 sm:min-w-[477px]">
-              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-12">
+              <div className="w-full grid lg:grid-cols-2 gap-4">
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-12 lg:pr-0">
                 <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
                   <CardHeader className="dark:bg-black rounded-3xl">
-                    <CardTitle className="font-sans">Mukilteo Robotics</CardTitle>
+                    <CardTitle className="tracking-tight text-2xl">Mukilteo Robotics</CardTitle>
                     <CardDescription className=" mt-3 ">Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM. </CardDescription>
-                    <ul className=" text-zinc-300">
-                      <li>• Mukilteo Robotics has over 40+ members.</li>
-                      <li>• Mukilteo Robotics is completely free for all of its members.</li>
-                      <li>• Mukilteo Robotics raised over $20,000 for their 2022 - 2023 season.</li>
-                    </ul>
                   </CardHeader>
-                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2  relative smMax:flex-wrap font-sans">
-                    <ButtonWithIconWork />
+                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                    <ButtonWithIconWork link="https://mukilteorobotics.org" />
                   </div>  
-                </Card>
 
-                
-
-              </CardHeader>
-              
-              <div className="sm:mx-12 mx-3">
-                <Card className="dark:bg-black w-full border-zinc-800 rounded-3xl p-3 z-[6] relative my-4 mt-0 flex-1 ">
-                  <CardHeader className="dark:bg-black border-zinc-200 rounded-3xl flex flex-row gap-6 flex-wrap sm:p-6 p-2">
-
-                  <div className="group">
+                  <div className="group w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
                     {/* <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge> */}
                   
                     <Image 
@@ -94,31 +82,54 @@ export default function Work() {
                       placeholder="blur"
                     
                       height='100%'
-                      className=' rounded-2xl grayscale transition-all opacity-60 hover:grayscale-0 hover:opacity-95'
+                      className=' rounded-2xl transition-all border border-neutral-800 mt-4'
                       alt="Group picture of members of Mukilteo Robotics at a championship event in Washington State."
                     /> 
                   </div>
-
-                  
-                    
-              
-
-              
-
-
-              <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-[110%] h-1/2 absolute bottom-0 -translate-x-14 sm:-translate-x-12 lg:-translate-x-40 left-12"> </div>
-              <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-[110%] h-1/2 absolute -bottom-10 blur-xl -translate-x-14 sm:-translate-x-12 lg:-translate-x-40 left-12"> </div>
-
-                  
-                  
-
-                  </CardHeader>
-                  
-
                 </Card>
-                <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-[110%] h-5/6 absolute bottom-0 -translate-x-40 left-12"> </div>
 
+
+              
+
+                
+
+              </CardHeader>
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 pt-2 sm:p-12 lg:pl-0">
+                <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
+                  <CardHeader className="dark:bg-black rounded-3xl">
+                    <CardTitle className="tracking-tight text-2xl">Washington Youth Alliance</CardTitle>
+                    <CardDescription className=" mt-3 " >The Washington Youth Alliance is a student-led advocacy organization that empowers young people to engage in the political process while also advocating for their rights as young citizens of their state. Their organization is also dedicated to empowering youth across Washington State by fostering essential life skills, promoting digital literacy, and preparing young people for their educational and career futures.</CardDescription>
+                  </CardHeader>
+                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-6 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                    <ButtonWithIconWork link="https://washingtonyouthalliance.org" />
+                  </div>  
+
+                  <div className="group w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                    {/* <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge> */}
+                  
+                    <Image 
+                      src={waImage}
+                      priority
+                      width='100%'
+                      quality={100}
+                      placeholder="blur"
+                    
+                      height='100%'
+                      className=' rounded-2xl transition-all border border-neutral-800 mt-4'
+                      alt="Group picture of members of Mukilteo Robotics at a championship event in Washington State."
+                    /> 
+                  </div>
+                </Card>
+
+
+              
+
+                
+
+              </CardHeader>
               </div>
+              
+              
               <div>
                 
   <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-screen -ml-4 h-4/5 absolute bottom-0 left-0"> </div>
@@ -127,7 +138,7 @@ export default function Work() {
 
               
 
-            <div className="z-10 pb-24 relative -mb-1 bg-black -bottom-0.5 overflow-hidden">
+            <div className="z-10 pb-24 relative -mb-1 bg-black -bottom-0.5 overflow-hidden w-full">
               <Footer className='' />
             </div>
               
