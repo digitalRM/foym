@@ -1,3 +1,4 @@
+
 import { UserNav } from "@/components/ui/user-nav"
 import { MainNavWork } from "@/components/ui/main-nav-work"
 
@@ -21,6 +22,7 @@ import Image from "next/image"
 
 import mrImage from "@/public/muk.jpeg"
 import waImage from "@/public/wa.jpeg"
+import plImage from "@/public/planet.jpeg"
 import portfolioImage from "@/public/portfolio.jpeg"
 
 import { Separator } from "@/components/ui/separator"
@@ -144,6 +146,40 @@ export default function Work() {
                   
                     <Image 
                       src={portfolioImage}
+                      priority
+                      width='100%'
+                      quality={100}
+                      placeholder="blur"
+                    
+                      height='100%'
+                      className=' rounded-2xl transition-all border border-neutral-800 mt-4'
+                      alt="Group picture of members of Mukilteo Robotics at a championship event in Washington State."
+                    /> 
+                  </div>
+                </Card>
+
+
+              
+
+                
+
+              </CardHeader>
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pl-0 sm:pt-0 ">
+                <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
+                  <CardHeader className="dark:bg-black rounded-3xl">
+                    <CardTitle className="tracking-tight text-base md:text-2xl">Green Planet - An FOYM<span className="text-brandPink lg:text-4xl">.</span> Template</CardTitle>
+                    <CardDescription className=" mt-3 " >This is the second template that we have created for our clients that is fully open source. It’s modeled after a made-up environmental organization called “Green Planet.” It is entirely responsive, works on all devices, and is fully customizable. You can use it to showcase your organization, group, nonprofit, or anything else.  </CardDescription>
+                  </CardHeader>
+                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 sm:mt-6 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                    <ButtonWithIconWork link="https://planet.foym.org" />
+                    <ButtonWithIconWork link="https://github.com/digitalRM/FOYM-Green-Planet" color="code" />
+                  </div>  
+
+                  <div className="group w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                    {/* <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge> */}
+                  
+                    <Image 
+                      src={plImage}
                       priority
                       width='100%'
                       quality={100}
