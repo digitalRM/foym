@@ -124,7 +124,7 @@ export default function Work() {
                 
 
               </CardHeader>
-              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pr-0 sm:pt-0 ">
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pr-0 sm:py-0 ">
                 <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
                   <CardHeader className="dark:bg-black rounded-3xl">
                     <CardTitle className="tracking-tight text-base md:text-2xl">The Portfolio - An FOYM<span className="text-brandPink lg:text-4xl">.</span> Template</CardTitle>
@@ -155,7 +155,7 @@ export default function Work() {
                 
 
               </CardHeader>
-              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pl-0 sm:pt-0 ">
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pl-0 sm:py-0 ">
                 <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
                   <CardHeader className="dark:bg-black rounded-3xl">
                     <CardTitle className="tracking-tight text-base md:text-2xl">Green Planet - An FOYM<span className="text-brandPink lg:text-4xl">.</span> Template</CardTitle>
@@ -185,7 +185,7 @@ export default function Work() {
                 
 
               </CardHeader>
-              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pr-0 sm:pt-0 ">
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pr-0 sm:py-0 ">
                 <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
                   <CardHeader className="dark:bg-black rounded-3xl">
                     <CardTitle className="tracking-tight text-base md:text-2xl">Blue Ocean - An FOYM<span className="text-brandPink lg:text-4xl">.</span> Template</CardTitle>
@@ -221,7 +221,7 @@ export default function Work() {
               
               <div>
                 
-  <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-screen -ml-4 h-4/5 absolute bottom-0 left-0"> </div>
+  <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-screen -ml-4 h-4/5 absolute bottom-0 -right-48"> </div>
 
               </div>
 
