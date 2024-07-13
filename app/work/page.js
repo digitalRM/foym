@@ -216,6 +216,38 @@ export default function Work() {
                 
 
               </CardHeader>
+
+              <CardHeader className="dark:bg-black rounded-[50px] flex flex-wrap flex-row sm:gap-6 gap-3 p-3 sm:p-12 lg:pr-0 sm:py-0 ">
+                <Card className="dark:bg-black w-1/3 rounded-[32px] p-1 sm:p-3 z-[6] relative my-2 mb-0 flex-1 min-w-[100%] md:min-w-[50%] flex flex-wrap">
+                  <CardHeader className="dark:bg-black rounded-3xl">
+                    <CardTitle className="tracking-tight text-base md:text-2xl">Volunteer Today - An FOYM<span className="text-brandPink lg:text-4xl">.</span> Template</CardTitle>
+                    <CardDescription className=" mt-3 " >This is the fourth fully open-source template we have created. This is a template for organizations modeled after a made-up volunteering nonprofit called “Volunteer Today.” It features a bento hero section, a double stacked informational section, and a call-to-action card.</CardDescription>
+
+                  </CardHeader>
+                  <div className="flex w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 sm:mt-6 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                    <ButtonWithIconWork link="https://volunteer.foym.org" />
+                    <ButtonWithIconWork link="https://github.com/digitalRM/FOYM-Volunteer-Today" color="code" />
+                  </div>  
+
+                  <div className="group w-full max-w-[100%] items-center sm:space-x-2 z-20 p-2 m-4 mt-0 pt-0 pl-1 mb-2  relative smMax:flex-wrap">
+                    {/* <Badge variant='outline' className=" g ml-1 translate-y-7 translate-x-4 font-sans  opacity-100 relative z-10 border-zinc-600 cursor-pointer">View More</Badge> */}
+                  
+                    <Image 
+                      src='/volunteer.jpeg'
+                      width='586'
+                      height='360'
+                      className=' rounded-2xl transition-all border border-neutral-800 mt-4'
+                      alt="An image of the Volunteer Today template website designed by Ruslan Mukhamedvaleev."
+                    /> 
+                  </div>
+                </Card>
+
+
+              
+
+                
+
+              </CardHeader>
               </div>
               
               
