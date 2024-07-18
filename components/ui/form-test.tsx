@@ -102,26 +102,25 @@ export function ProfileForm() {
       async function onSubmit(data: z.infer<typeof formSchema>) {
 
         try {
-          const res = await fetch('/api/contact', {
+          const res = await fetch('https://docs.google.com/forms/d/e/1FAIpQLSeBGRdaqHlmAMF5-3VUC7q5Dm0-zJ5Qk59nVMYhRy9TSwBzTw/formResponse', {
             method: 'POST',
-            body: JSON.stringify({
-              name: data.name,
-              email: data.email,
-              orgType: data.orgType,
-              mobile: data.mobile,
-              bio: data.bio,
+
+            // use the google form entires: entry.1423296062 = name, entry.1225451973 = email, entry.900125753 = orgType, entry.264286563 = bio
+            body: new URLSearchParams({
+              'entry.1423296062': data.name,
+              'entry.1225451973': data.email,
+              'entry.900125753': data.orgType,
+              'entry.264286563': data.bio,
             }),
-            headers: {
-              'content-type': 'application/json',
-            },
+            mode: 'no-cors',
           })
-          if (res.status === 200) {
-            form.reset()
-            toast({
-              title: "Thanks for submitting!",
-              description: "We'll get back to you as soon as possible.",
-            })
-          }
+
+          form.reset()
+          toast({
+            title: "Thanks for submitting!",
+            description: "We'll get back to you as soon as possible.",
+          })
+          
         } catch (err: any) {
           console.error('Err', err)
           toast({
