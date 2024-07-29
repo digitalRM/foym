@@ -300,7 +300,7 @@ export default function Work() {
               
               <div>
                 
-  <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-screen -ml-4 h-4/5 absolute bottom-0 -right-48"> </div>
+  <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-screen -ml-4 h-4/5 absolute bottom-0"> </div>
 
               </div>
 
