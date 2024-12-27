@@ -72,34 +72,31 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <Script id="org-schema" type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "FOYM",
-              "alternateName": "Focus On Your Mission",
-              "url": "https://www.foym.org",
-              "logo": "https://www.foym.org/openGraph.png",
-              "description": "A non-profit tech initiative providing free professional website development for non-profits and small businesses.",
-              "founder": {
-                "@type": "Person",
-                "name": "Ruslan Mukhamedvaleev",
-                "jobTitle": "Founder",
-                "url": "https://www.foym.org"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/foym"
-              ],
-              "knowsAbout": [
-                "Web Development",
-                "Non-profit Technology",
-                "Digital Transformation",
-                "Social Impact"
-              ],
-              "nonprofitStatus": "Nonprofit Organization",
-              "foundingDate": "2023"
-            }
-          `}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "FOYM",
+            alternateName: "Focus On Your Mission",
+            url: "https://www.foym.org",
+            logo: "https://www.foym.org/openGraph.png",
+            description:
+              "A non-profit tech initiative providing free professional website development for non-profits and small businesses.",
+            founder: {
+              "@type": "Person",
+              name: "Ruslan Mukhamedvaleev",
+              jobTitle: "Founder",
+              url: "https://www.foym.org",
+            },
+            sameAs: ["https://www.linkedin.com/company/foym"],
+            knowsAbout: [
+              "Web Development",
+              "Non-profit Technology",
+              "Digital Transformation",
+              "Social Impact",
+            ],
+            nonprofitStatus: "Nonprofit Organization",
+            foundingDate: "2023",
+          })}
         </Script>
       </head>
       <body className={inter.className}>
