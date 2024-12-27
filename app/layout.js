@@ -89,7 +89,6 @@ export default function RootLayout({ children }) {
               },
               "sameAs": [
                 "https://www.linkedin.com/company/foym",
-                "https://twitter.com/foym_org"
               ],
               "knowsAbout": [
                 "Web Development",
