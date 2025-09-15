@@ -216,10 +216,10 @@ export default function Work() {
 
       <div className="w-full flex justify-center">
         <div className="w-full m-2 p-[0px] sm:p-[2px] relative h-fit max-w-[1440px] xl:max-w-[1440px]">
-          <div className="bg-gradient-to-r from-brandBlue to-brandPink flex lg:h-full w-full items-center justify-center bg-white dark:bg-black rounded-[80px] relative transition-all p-[1px]">
-            <div className="absolute -inset-2 rounded-[80px] bg-gradient-to-r from-brandBlue to-brandPink opacity-40 blur-xl h-1/3 sm:h-4/5" />
+          <div className="bg-gradient-to-r from-brandBlue to-brandPink flex lg:h-full w-full items-center justify-center bg-white dark:bg-black md:rounded-[80px] rounded-[50px] relative transition-all p-[1px]">
+            <div className="absolute -inset-2 md:rounded-[80px] rounded-[50px] bg-gradient-to-r from-brandBlue to-brandPink opacity-40 blur-xl h-1/3 sm:h-4/5" />
 
-            <Card className="dark:bg-blackmax-w-[1440px] bg-black rounded-[80px] p-1 w-full z-[6] relative mb-0 flex-1 sm:min-w-[477px]">
+            <Card className="dark:bg-blackmax-w-[1440px] bg-black md:rounded-[80px] rounded-[50px] p-1 w-full z-[6] relative mb-0 flex-1 sm:min-w-[477px]">
               <div className="w-full grid lg:grid-cols-2 gap-4">
                 {workItems.map((item, index) => (
                   <WorkItem key={index} item={item} index={index} />
