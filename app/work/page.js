@@ -38,33 +38,43 @@ export const metadata = {
 // Work items data for cleaner organization
 const workItems = [
   {
-    title: "Cake in the Park",
-    description:
-      "A community event website designed for the sweetest community event of the summer in Mukilteo. Join us at the Mukilteo Lighthouse Park for this delightful gathering where neighbors come together to spread cake love throughout the community. This project focused on showcasing event promotion and community engagement through a simple, clean, and modern website. ",
-    image: "/CakeInThePark.jpeg",
-    links: [{ url: "#", type: "live" }],
-    alt: "An image of the Cake in the Park community event website designed by Ruslan Mukhamedvaleev.",
-  },
-  {
     title: "Washington Youth Alliance",
+    date: "May 2024 - Sep 2025",
     description:
       "The Washington Youth Alliance is a student-led advocacy organization that empowers young people to engage in the political process while also advocating for their rights as young citizens of their state. Their organization is also dedicated to empowering youth across Washington State by fostering essential life skills, promoting digital literacy, and preparing young people for their educational and career futures.",
     image: "/wa.jpeg",
-    links: [{ url: "https://washingtonyouthalliance.org", type: "live" }],
+    links: [
+      { url: "https://wa-youth.foym.org", type: "past-client" },
+      {
+        url: "https://github.com/digitalRM/FOYM-Washington-Youth-Alliance",
+        type: "code",
+      },
+    ],
     alt: "An image of the Washington Youth Alliance website designed by Ruslan Mukhamedvaleev.",
   },
   {
-    title: "Mukilteo Robotics",
+    title: "Harmony Association For Youth",
+    date: "Ongoing Partnership",
     description:
-      "Mukilteo Robotics is a student-led non-profit organization located in Mukilteo, Washington. Their organization participates in VEX Robotics, a global competitive robotics program. As part of their program, members have the incredible opportunity to develop their STEM skills, completely free of charge. students of different races, ethnicities, genders, and socio-economic backgrounds find common ground, united by their shared passion for robotics and the pursuit of STEM.",
-    image: "/muk.jpeg",
-    links: [{ url: "https://mukilteorobotics.org", type: "live" }],
-    alt: "An image of the Mukilteo Robotics website designed by Ruslan Mukhamedvaleev.",
+      "The Harmony Association For Youth is a non-profit organization that encourages young people to better their communities by using their skills through youth-focused events, tutoring sessions, and challenges. This project focused on upgrading their website to a more modern and user-friendly design that better reflects their mission, values, and their community impact!",
+    image: "/HAY.jpeg",
+    links: [{ url: "https://harmonyassociationforyouth.org", type: "live" }],
+    alt: "An image of the Harmony Association For Youth website designed by Ruslan Mukhamedvaleev.",
+  },
+  {
+    title: "Cake in the Park",
+    date: "July 2025",
+    description:
+      "A community event website designed for the sweetest community event of the summer in Mukilteo. They held the event at Mukilteo Lighthouse Park, a delightful gathering where neighbors came together to spread love throughout the community through cake. This project focused on showcasing event promotion and community engagement through a simple, clean, and modern website. ",
+    image: "/CakeInThePark.jpeg",
+    links: [{ url: "https://cakeinthepark.com/", type: "live" }],
+    alt: "An image of the Cake in the Park community event website designed by Ruslan Mukhamedvaleev.",
   },
   {
     title: "The Portfolio - An FOYM",
+    date: "New Version Available Below!",
     description:
-      "This is the first template we have created for our clients—the first of many to come. It is a simple, clean, modern website modeled after a resume, perfect for showcasing your work. It is fully responsive and works on all devices. It is also fully customizable and easy to use. You can use it to create a portfolio that showcases your work to potential clients and employers.",
+      "This is the first template we have created for our clients - the first of many to come. It is a simple, clean, modern website modeled after a resume, perfect for showcasing your work. It is fully responsive and works on all devices. It is also fully customizable and easy to use. You can use it to create a portfolio that showcases your work to potential clients and employers.",
     image: "/portfolio.jpeg",
     links: [
       { url: "https://portfolio.foym.org", type: "live" },
@@ -130,6 +140,28 @@ const workItems = [
     ],
     alt: "An image of the Grow Together template website designed by Ruslan Mukhamedvaleev.",
   },
+  {
+    title: "Art Access - An FOYM",
+    description:
+      'This is the seventh fully open-source template we have created. This is a template for organizations modeled after a made-up art nonprofit called "Art Access." It features a left-aligned hero, a testimonial section, and a frequently asked questions section.',
+    image: "/art.jpeg",
+    links: [
+      { url: "https://art.foym.org", type: "live" },
+      { url: "https://github.com/digitalRM/FOYM-Art-Access", type: "code" },
+    ],
+    alt: "An image of the Art Access template website designed by Ruslan Mukhamedvaleev.",
+  },
+  {
+    title: "Device Drive - An FOYM",
+    description:
+      'This is the eighth fully open-source template we have created. This is a template for organizations modeled after a made-up device drive nonprofit called "Device Drive." It features a center-aligned hero, an information section, and a frequently asked questions section.',
+    image: "/device.jpeg",
+    links: [
+      { url: "https://device.foym.org", type: "live" },
+      { url: "https://github.com/digitalRM/FOYM-Device-Drive", type: "code" },
+    ],
+    alt: "An image of the Device Drive template website designed by Ruslan Mukhamedvaleev.",
+  },
 ];
 
 // Component for individual work items
@@ -173,6 +205,11 @@ function WorkItem({ item, index }) {
               </div>
             )}
           </CardTitle>
+          {item.date && (
+            <CardDescription className="mt-3 rounded-3xl border px-2 w-fit py-1">
+              {item.date}
+            </CardDescription>
+          )}
           <CardDescription className="mt-3">{item.description}</CardDescription>
         </CardHeader>
 
@@ -181,7 +218,13 @@ function WorkItem({ item, index }) {
             <ButtonWithIconWork
               key={linkIndex}
               link={link.url}
-              color={link.type === "code" ? "code" : undefined}
+              color={
+                link.type === "code"
+                  ? "code"
+                  : link.type === "past-client"
+                  ? "past-client"
+                  : undefined
+              }
             />
           ))}
         </div>
@@ -220,14 +263,14 @@ export default function Work() {
             <div className="absolute -inset-2 md:rounded-[80px] rounded-[50px] bg-gradient-to-r from-brandBlue to-brandPink opacity-40 blur-xl h-1/3 sm:h-4/5" />
 
             <Card className="dark:bg-blackmax-w-[1440px] bg-black md:rounded-[80px] rounded-[50px] p-1 w-full z-[6] relative mb-0 flex-1 sm:min-w-[477px]">
-              <div className="w-full grid lg:grid-cols-2 gap-4">
+              <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {workItems.map((item, index) => (
                   <WorkItem key={index} item={item} index={index} />
                 ))}
               </div>
 
               <div>
-                <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-screen -ml-12 h-4/5 absolute bottom-0"></div>
+                <div className="bg-gradient-to-t from-white via-white dark:from-black dark:via-black to-transparent w-[112%] sm:w-[105%] lg:w-[108%] -ml-12 h-4/5 absolute bottom-0"></div>
               </div>
 
               <div className="z-10 pb-24 relative -mb-1 bg-black -bottom-0.5 overflow-hidden w-full">
