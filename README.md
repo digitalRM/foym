@@ -1,3 +1,7 @@
+<img width="5088" height="3160" alt="An image of the FOYM website" src="https://github.com/user-attachments/assets/37070cd5-5bca-4568-99fd-dea620741047" />
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
