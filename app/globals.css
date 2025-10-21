@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.question {  
+.question {
   color: white;
   position: relative;
 }
@@ -10,90 +10,88 @@
   content: ".";
   margin-top: -0.8px;
   font-size: 38px;
-  position: absolute; 
-  color: #E724C8;
-  margin-left:3.6px;
+  position: absolute;
+  color: #e724c8;
+  margin-left: 3.6px;
 }
- 
+
 @layer base {
   :root {
-
     color-scheme: dark;
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
- 
+
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
- 
+
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
- 
+
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
- 
+
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
- 
+
     --accent: 240 4.8% 95.9%;
     --accent-foreground: ;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
- 
+
     --ring: 240 5% 64.9%;
- 
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
- 
+
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
- 
+
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
- 
+
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
- 
+
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
- 
+
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
- 
+
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --accent: 240 3.7% 15.9%;
     --accent-foreground: ;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
- 
+
     --ring: 240 3.7% 15.9%;
   }
 }
 
 .bg-fade-in::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('./hero2x.webp') center/cover no-repeat;
+  background: url("/hero2x.webp") center/cover no-repeat;
   z-index: -1;
   animation: fadeIn 0.7s ease-in-out;
-
 }
 /* This targets the scrollbar itself */
 .scroll-thin::-webkit-scrollbar {
@@ -116,7 +114,6 @@
 .scroll-thin::-webkit-scrollbar-thumb:hover {
   background: #464646; /* Tailwind neutral-800 for hover */
 }
-
 
 .fadeIn {
   animation: fadeIn 0.7s ease-in-out;

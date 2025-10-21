@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div className="relative bg-black">
       <NewHead />
-      <div className="h-full w-screen my-[10px] sm:my-[148px] sm:mb-24 sm:p-0 p-4  bg-cover bg-center sm:bg-[url('./hero2x.webp')] z-[2] mt-48 relative">
+      <div className="h-full w-screen my-[10px] sm:my-[148px] sm:mb-24 sm:p-0 p-4  bg-cover bg-center sm:bg-[url('/hero2x.webp')] z-[2] mt-48 relative">
         <div className="pb-32 pt-20 text-left sm:text-center lg:pt-44 mx-auto lg:max-w-7xl md:max-w-2xl sm:max-w-xl px-4 sm:px-6 lg:px-8 ">
           <h1 className="sm:mx-auto sm:max-w-3xl lg:text-7xl font-semibold max-w-[326px]   tracking-tighter text-white md:text-6xl sm:text-5xl text-left text-3xl sm:text-center">
             Focus On Your{" "}
@@ -127,7 +127,7 @@ export default function Home() {
                       </CardDescription>
                     </CardHeader>
                   </Card>
-                  <Card className="row-span-2 col-start-2 xl:h-auto h-96 md:h-[486px]  relative row-start-1 p-9 bg-black border-zinc-800 rounded-3xl bg-[url('./starBox.png')] bg-cover">
+                  <Card className="row-span-2 col-start-2 xl:h-auto h-96 md:h-[486px]  relative row-start-1 p-9 bg-black border-zinc-800 rounded-3xl bg-[url('/starBox.png')] bg-cover">
                     <Dialog>
                       <Button
                         variant="outline"
