@@ -1,31 +1,13 @@
-import { UserNav } from "@/components/ui/user-nav";
-import { MainNavWork } from "@/components/ui/main-nav-work";
-
-import Link from "next/link";
-
 import {
   Card,
-  CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
 import { ButtonWithIconWork } from "@/components/ui/button-work-link";
 
 import Image from "next/image";
-
-import mrImage from "@/public/muk.jpeg";
-import waImage from "@/public/wa.jpeg";
-import plImage from "@/public/planet.jpeg";
-import portfolioImage from "@/public/portfolio.jpeg";
-
-import { Separator } from "@/components/ui/separator";
-import { Skeleton } from "@/components/ui/skeleton";
 import NewHead from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 
@@ -58,7 +40,10 @@ const workItems = [
     description:
       "The Harmony Association For Youth is a non-profit organization that encourages young people to better their communities by using their skills through youth-focused events, tutoring sessions, and challenges. This project focused on upgrading their website to a more modern and user-friendly design that better reflects their mission, values, and their community impact!",
     image: "/HAY.jpeg",
-    links: [{ url: "https://harmonyassociationforyouth.org", type: "live" }],
+    links: [
+      { url: "https://hay-youth-foym.vercel.app/", type: "work-in-progress" },
+      { url: "https://hayyouth.org", type: "current" },
+    ],
     alt: "An image of the Harmony Association For Youth website designed by Ruslan Mukhamedvaleev.",
   },
   {
@@ -162,6 +147,31 @@ const workItems = [
     ],
     alt: "An image of the Device Drive template website designed by Ruslan Mukhamedvaleev.",
   },
+  {
+    title: "Portfolio Version 2 - An FOYM",
+    description:
+      "This is the ninth fully open-source template we have created. This is an updated version of the Portfolio template that we have created. It is a simple, clean, modern website modeled after a resume, perfect for showcasing your work. It is fully responsive and works on all devices. It is also fully customizable and easy to use. You can use it to create a portfolio that showcases your work to potential clients and employers.",
+    image: "/porfolioV2.jpeg",
+    links: [
+      { url: "https://foym-portfolio-v2.vercel.app/", type: "live" },
+      {
+        url: "https://github.com/digitalRM/FOYM-Portfolio-V2",
+        type: "code",
+      },
+    ],
+    alt: "An image of the Portfolio Version 2 template website designed by Ruslan Mukhamedvaleev.",
+  },
+  {
+    title: "Focus on Your Mission - An FOYM",
+    description:
+      "This is the tenth fully open-source template we have created. It's this very own website. The source code is now available for you to use and customize to your liking.",
+    image: "/FOYM.jpeg",
+    links: [
+      { url: "https://foym.org", type: "live" },
+      { url: "https://github.com/digitalRM/FOYM", type: "code" },
+    ],
+    alt: "An image of the FOYM template website designed by Ruslan Mukhamedvaleev.",
+  },
 ];
 
 // Component for individual work items
@@ -223,6 +233,10 @@ function WorkItem({ item, index }) {
                   ? "code"
                   : link.type === "past-client"
                   ? "past-client"
+                  : link.type === "current"
+                  ? "current"
+                  : link.type === "work-in-progress"
+                  ? "work-in-progress"
                   : undefined
               }
             />
